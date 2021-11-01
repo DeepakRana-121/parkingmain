@@ -1,0 +1,428 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+.parent_navigation_start {
+  background-color: black;
+  min-height: 7vh;
+  position: relative;
+}
+.navigation_start_here {
+  overflow: hidden;
+  width: 100%;
+}
+.navigation_start_here ul {
+  list-style: none;
+  text-align: center;
+}
+.navigation_start_here ul li {
+  display: inline;
+}
+.navigation_start_here ul li a {
+  text-decoration: none;
+  line-height: 8vh;
+  padding: 1% 1%;
+  font-weight: 400;
+  color: whitesmoke;
+}
+#mainbutton_right_side {
+  position: absolute;
+  right: 13px;
+  top: 13px;
+  background-color: whitesmoke;
+  display: none;
+}
+#mainbutton_right_side:hover {
+  background-color: rgba(255, 255, 255, 0.705);
+  border: 2px solid rgb(17, 108, 228);
+}
+.hello {
+  position: relative;
+}
+
+.hover_container {
+  min-height: 10vh;
+  width: 60%;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.808);
+  bottom: 5%;
+  color: white;
+  left: 20%;
+  text-align: center;
+}
+.hover_container h1 {
+  padding: 7%;
+}
+
+/**************new site**********/
+h1 {
+  font-size: 28px;
+  font: bold;
+  font-weight: 600;
+}
+h5 {
+  font-size: 20px;
+  font: bold;
+}
+p {
+  font-size: 18px;
+}
+* {
+  color: black;
+  list-style-type: none;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+.center_text {
+  text-align: center;
+}
+.padding_container {
+  padding: 6vh 0% 6vh 0%;
+}
+.bg_yellow {
+  background-color: #ffc000 !important;
+}
+.bg_yellow_light {
+  background-color: #ffbf00a4 !important;
+}
+/***************************What is ParkingMudde Solving? start start**************/
+.big_box_container_for_fun {
+  min-height: 70vh;
+}
+.big_box_container_for_fun img {
+  width: 100px;
+  padding-bottom: 3vh;
+}
+.parkingmudde_box {
+  min-height: 42vh;
+  width: 100%;
+  margin-top: 2%;
+  padding: 5vh 5%;
+  border: 1px solid black;
+  text-align: center;
+}
+.parkingmudde_logo_container {
+  text-align: center;
+}
+.main_padding_box_lower {
+  margin-top: 200px;
+} /*****************footer start************/
+.footer_box_flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.footer_box_flex .box {
+  background-color: white;
+  width: 24%;
+  min-height: 40vh;
+  border: 1px solid black;
+  padding: 6vh 4%;
+}
+.footer_box_flex i {
+  padding: 0% 0% 5vh 0%;
+  font-size: 80px;
+  color: royalblue;
+}
+.middle_footer_container {
+  min-height: 80vh;
+  background-color: yellow;
+  margin-top: -200px;
+  color: black;
+  padding: 280px 0% 10vh 0%;
+}
+.middle_footer_container ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.padding_left_container_footer i {
+  color: black;
+}
+.middle_footer_container ul li {
+  margin-right: 30px;
+  margin-top: 50px;
+}
+.middle_footer_container i {
+  font-size: 40px;
+}
+.middle_footer_container input {
+  padding-left: 2%;
+  height: 40px;
+  width: 70%;
+}
+.middle_footer_container textarea {
+  padding-left: 2%;
+  width: 70%;
+  height: 25vh;
+}
+.padding_left_container_footer {
+  padding: 0% 10% 0% 5%;
+}
+.right_padding_para {
+  padding: 2% 0% 0% 0%;
+  font-style: italic;
+  font-weight: 600;
+}
+.last_footer_section {
+  min-height: 30vh;
+  padding: 15vh 0%;
+  background-color: black;
+  color: whitesmoke;
+}
+/****************media query start********************/
+@media (max-width: 992px) {
+  .rock_box {
+    min-height: 20vh;
+    margin-top: 30px;
+    box-shadow: 3px 3px 6px #ccc;
+  }
+  .bac_image_11 {
+    display: none;
+  }
+  .bac_image_12 {
+    min-height: 60vh;
+  }
+  .bac_image_13 {
+    display: none;
+  }
+  .boldtexting {
+    padding: 0%;
+  }
+  .bac_image_14 {
+    min-height: 60vh;
+    margin-top: 20px;
+  }
+  .second_image_gallery_container img {
+    margin-top: 20px;
+  }
+  .padding_text_center_container {
+    padding-top: 0vh;
+  }
+  .flexing_work_container {
+    margin-top: 50px;
+  }
+  .bac_image_2 {
+    margin-top: 20px;
+  }
+  .data_differenciate .padding_top_tetxt {
+    margin-top: 40px;
+  }
+  .flexing_work_how_box {
+    width: 48%;
+    margin-top: 20px;
+  }
+  .background_image_work {
+    display: none;
+  }
+  .footer_box_flex {
+    justify-content: space-around;
+  }
+  .footer_box_flex .box {
+    width: 48%;
+    margin-top: 40px;
+  }
+  .center_text_form_footer p {
+    text-align: center;
+  }
+  .main_padding_box_lower {
+    margin-top: 14px;
+  }
+  .parkingmudde_box p {
+    padding: 0 20%;
+  }
+  .logo_container_for_last_content {
+    margin-top: 50px;
+  }
+  .display_flexning_here_for_images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .display_flexning_here_for_images img {
+    width: 48%;
+    margin-left: 10px;
+  }
+}
+@media (max-width: 792px) {
+  .display_flexning_here_for_images img {
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+  }
+  .work_box {
+    width: 90%;
+    margin-top: 20px;
+  }
+  .flexing_work_how_box {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+/*********************add banner start**************/
+.add_banner .carousel-cell {
+  width: 90%;
+  min-height: 320px;
+  margin-right: 30px;
+  counter-increment: carousel-cell;
+  border: 1px solid black;
+  text-align: center;
+  overflow: hidden;
+}
+/**********************lower footer start**************/
+.margin_top_minus {
+  margin-top: -250px;
+}
+.margin_footer_start {
+  margin-top: 300px;
+}
+.main_height_card_footer {
+  min-height: 40vh;
+}
+.lower_footer_logo i {
+  color: #ffc000;
+  text-shadow: 1px 1px 4px white;
+  font-size: 100px;
+  padding: 5vh 0%;
+}
+.medium_footer_form_container {
+  font-weight: 600;
+  padding-top: 15vh;
+  padding-bottom: 15vh;
+}
+.medium_footer_form_container input {
+  font-weight: 600;
+  width: 80%;
+  height: 45px;
+}
+.medium_footer_form_container textarea {
+  width: 80%;
+}
+.left_text {
+  text-align: left;
+  margin-left: 10%;
+}
+.navigation_footer li {
+  display: inline;
+  margin-right: 30px;
+}
+.navigation_footer li a {
+  font-size: 40px;
+}
+.navigation_footer li a i {
+  text-shadow: 1px 1px 4px white;
+}
+/***************footer start***********/
+.lower_footer_height {
+  min-height: 30vh;
+}
+.lower_footer {
+  background-color: black;
+}
+/**************media query start***************/
+@media (max-width: 1000px) {
+  .navigation_start_here {
+    display: none;
+    padding-top: 8vh;
+  }
+  #mainbutton_right_side {
+    display: block;
+  }
+  .navigation_start_here ul li {
+    display: block;
+  }
+  .navigation_start_here ul li a {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .medium_footer_form_container_second input {
+    width: 98%;
+  }
+  .medium_footer_form_container_second textarea {
+    width: 98%;
+  }
+  #mobile_height {
+    height: 50vh;
+    width: 300px;
+  }
+  #hidden_car_image {
+    display: none;
+  }
+  .margin_top {
+    margin-top: 20px;
+  }
+  .margin_top_card {
+    margin-top: 25px;
+  }
+  .main_testimonial_container {
+    padding-bottom: 5vh;
+  }
+  .getintouch_form textarea {
+    height: 30vh;
+  }
+  .medium_footer_form_container_second {
+    margin-top: 50px;
+  }
+  .padding_left_text_container_car {
+    padding: 0% 3% 0% 3%;
+  }
+}
+@media (max-width: 768px) {
+  .button_hover img {
+    margin-top: 20px;
+  }
+  #mainbutton_right_side {
+    top: 5px;
+    right: 5px;
+  }
+  .hover_container h1 {
+    font-size: 18px;
+  }
+  #hidden_phone {
+    display: none;
+  }
+  .join_exclusive_container input {
+    height: 40px;
+    width: 80%;
+    margin-top: 20px;
+  }
+  .inputing_sizing input {
+    width: 95%;
+  }
+  .inputing_sizing textarea {
+    font-weight: 600;
+    width: 95%;
+  }
+  .left_text {
+    margin-left: 2.5%;
+  }
+  #mobile_height {
+    width: 80%;
+  }
+  .main_carousel .carousel-cell {
+    height: 60vh;
+    width: 300px;
+    padding-top: 10vh;
+  }
+  .padding_left_text_container_car {
+    padding: 0% 0% 0% 0%;
+  }
+}
+@media (max-width: 300px) {
+  p {
+    font-size: 16px;
+  }
+  h1 {
+    font-size: 22px;
+  }
+  .car_image_container img {
+    margin-left: 130px;
+  }
+}

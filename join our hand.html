@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Join Our Hands</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/f665390b3c.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="jQuery.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#mainbutton_right_side").click(function () {
+          $(".navigation_start_here").slideToggle();
+          $("#main_iconic").toggle();
+        });
+        $(".hello1").hover(function () {
+          $(".car_image_container .right_to_left").css({
+            " animation-iteration-count ": 2,
+            "margin-left": "0px",
+            transition: "2s",
+          });
+        });
+        $(".hello2").hover(function () {
+          $(".car_image_container .left_to_right").css({
+            " animation-iteration-count ": 2,
+            "margin-left": "0px",
+            transition: "2s",
+          });
+        });
+        $(".counter-count").each(function () {
+          $(this)
+            .prop("Counter", 0)
+            .animate(
+              {
+                Counter: $(this).text(),
+              },
+              {
+                duration: 5000,
+                easing: "swing",
+                step: function (now) {
+                  $(this).text(Math.ceil(now));
+                },
+              }
+            );
+        });
+      });
+    </script>
+    <style>
+      a {
+        text-decoration: none !important;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      a,
+      span,
+      input,
+      textarea,
+      p {
+        font-weight: 400 !important;
+        font-family: "Nunito", sans-serif !important;
+      }
+
+      h1 {
+        font-size: 28px !important;
+        font: bold !important;
+      }
+
+      h2 {
+        font-size: 20px !important;
+      }
+
+      p {
+        font-size: 16px !important;
+      }
+
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-size: 16px !important;
+      }
+
+      .table {
+        width: 80%;
+        margin: auto;
+        margin-top: 50px;
+      }
+
+      @media (max-width: 992px) {
+        .table {
+          width: 100%;
+        }
+
+        .main_ing_top_text {
+          width: 100% !important;
+        }
+
+        #main_hidden_image_small_screen {
+          display: none;
+        }
+      }
+      body {
+        position: relative;
+      }
+      #hello_come_top {
+        bottom: -40px;
+      }
+      #hello_come_top:hover {
+        bottom: 0px;
+      }
+    </style>
+    <link rel="stylesheet" href="css/style2.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/blackicon.css" />
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+  </head>
+
+  <body>
+    <section
+      class="whats_app_icon"
+      style="
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        z-index: 10000000000000000000000000;
+      "
+    >
+      <a href="#">
+        <img src="icon/whatsapp.png" height="60px" width="60px" alt=""
+      /></a>
+    </section>
+    <!----------------whats app-->
+    <section
+      class="go_to_top"
+      id="hello_come_top"
+      style="position: fixed; right: 40px; z-index: 100000000000000000000000"
+    >
+      <a href="#">
+        <img src="images/iconicon.png" height="90px" width="70px" alt=""
+      /></a>
+    </section>
+    <!------------------------go to top icon-->
+    <section class="container-fluid">
+      <section class="container-fluid">
+        <section
+          class="row parent_navigation_start"
+          style="background-color: black"
+        >
+          <section class="col">
+            <section
+              class="navigation_start_here"
+              style="font-size: 18px !important"
+            >
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="our story.html">Our Story</a></li>
+                <li><a href="news and blogs.html">News & Blogs</a></li>
+                <li>
+                  <a href="join our hand.html"
+                    >Join our hands - Partner with us</a
+                  >
+                </li>
+                <li><a href="help center.html">Help & Support</a></li>
+                <li><a href="register.html">Register With Us!</a></li>
+                <li><a href="login.html">Login</a></li>
+              </ul>
+            </section>
+            <img
+              src="images/mainmain.png"
+              height="40px"
+              width="40px"
+              alt=""
+              id="mainbutton_right_side"
+            />
+          </section>
+        </section>
+      </section>
+      <section class="row text-center">
+        <section class="col">
+          <br />
+          <img
+            id="main_iconic"
+            src="images/Parking Mudde final.png"
+            height="60px"
+            alt=""
+          />
+        </section>
+      </section>
+    </section>
+
+    <!-------------------mian join our hands start-->
+    <section class="container" style="min-height: 60vh">
+      <section class="row">
+        <section class="col-xl-6 col-lg-6 col-md-12 col-sm-12 my-auto">
+          <h1
+            style="
+              font-size: 40px !important;
+              color: royalblue !important;
+              font-weight: 900 !important;
+            "
+          >
+            JOIN TODAY
+          </h1>
+          <h2 style="font-size: 20px !important; font-weight: 600 !important">
+            Ready to work with us? So, What are you waiting for? Join our Team!
+          </h2>
+
+          <p>
+            All you need to do is get vehicle owners/parking space owners
+            registered on the application by sharing your Link (you will get it
+            once registered as a partner) and once the user downloads the app
+            using your link then that user will be counted for your incentives.
+          </p>
+          <section class="container-fluid">
+            <section class="row">
+              <section class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                <ul>
+                  <li>
+                    <img
+                      src="social links/checkbox-mark.png"
+                      height="16px"
+                      width="16px"
+                      alt=""
+                    />&nbsp; Effortless Registrations
+                  </li>
+                  <li>
+                    <img
+                      src="social links/checkbox-mark.png"
+                      height="16px"
+                      width="16px"
+                      alt=""
+                    />&nbsp; No Calling Needed
+                  </li>
+                  <li>
+                    <img
+                      src="social links/checkbox-mark.png"
+                      height="16px"
+                      width="16px"
+                      alt=""
+                    />&nbsp; Earn Daily, Weekly, Monthly & Yearly Incentives
+                  </li>
+                </ul>
+              </section>
+              <section class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                <ul>
+                  <li>
+                    <img
+                      src="social links/checkbox-mark.png"
+                      height="16px"
+                      width="16px"
+                      alt=""
+                    />&nbsp; No Data/Leads required
+                  </li>
+                  <li>
+                    <img
+                      src="social links/checkbox-mark.png"
+                      height="16px"
+                      width="16px"
+                      alt=""
+                    />&nbsp; No Office Needed
+                  </li>
+                </ul>
+              </section>
+            </section>
+          </section>
+        </section>
+        <section
+          class="col-xl-6 col-lg-6 col-md-12 col-sm-12 my-auto"
+          style="position: relative; min-height: 500px"
+        >
+          <img
+            id=""
+            src="icon/join.jpg"
+            width="70%"
+            alt=""
+            style="position: absolute; top: 0px"
+          />
+          <section
+            class="main_ing_top_text"
+            style="
+              position: absolute;
+              top: 150px;
+              z-index: 100;
+              width: 70%;
+              left: 0px;
+              padding: 2%;
+              background-color: #015ce1;
+            "
+          >
+            <p style="color: white !important; font-size: 30px !important">
+              <img
+                src="images/semi.png"
+                height="60px"
+                width="60px"
+                alt=""
+              /><br />
+              Now, get vehicle owners or parking space owners registered on
+              application and earn lots of incentives.
+            </p>
+          </section>
+        </section>
+      </section>
+    </section>
+    <!-------------------mian join our hands end-->
+
+    <!---------------table start-->
+    <section class="table-responsive">
+      <p style="font-size: 12px !important; text-align: center">
+        *Your incentives are subject to the targets and Incentive slab achieved
+      </p>
+      <h1 style="font-weight: 700 !important; text-align: center">
+        Incentive Sabs
+      </h1>
+      <table class="table" border="1">
+        <tr height="50px">
+          <th>Daily TargeT</th>
+          <th>100</th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+        <tr height="50px">
+          <th>SLAB</th>
+          <th>Lift from Last Month</th>
+          <th colspan="2">Revenue</th>
+          <th>MIN</th>
+          <th>MAX</th>
+          <th>SLAB%</th>
+        </tr>
+        <tr height="50px">
+          <td width="14.28%">Slab 1</td>
+          <td width="14.28%">-10%</td>
+          <td width="14.28%">90</td>
+          <td width="14.28%">99</td>
+          <td width="14.28%">45</td>
+          <td width="14.28%">45</td>
+          <td width="14.28%">1%</td>
+        </tr>
+        <tr height="50px">
+          <td>Slab 2</td>
+          <td>0%</td>
+          <td>100</td>
+          <td>109</td>
+          <td>100</td>
+          <td>100</td>
+          <td>3%</td>
+        </tr>
+        <tr height="50px">
+          <td>Slab 3</td>
+          <td>10%</td>
+          <td>110</td>
+          <td>119</td>
+          <td>132</td>
+          <td>132</td>
+          <td>5%</td>
+        </tr>
+        <tr height="50px">
+          <td>Slab 4</td>
+          <td>20%</td>
+          <td>120</td>
+          <td>124</td>
+          <td>180</td>
+          <td>180</td>
+          <td>10%</td>
+        </tr>
+        <tr height="50px">
+          <td>Slab 5</td>
+          <td>25%</td>
+          <td>125</td>
+          <td>150</td>
+          <td>250</td>
+          <td>254</td>
+          <td>15%</td>
+        </tr>
+
+        <tr height="50px">
+          <th>Achieved Numbers</th>
+          <th>123</th>
+          <th>Final Revenue</th>
+          <th>180</th>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+
+        <tr height="50px">
+          <th>Weekly Target</th>
+          <th>700</th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+        <tr height="50px">
+          <th></th>
+          <th></th>
+          <th></th>
+          <th>700</th>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+
+        <tr height="50px">
+          <th>SLAB</th>
+          <th>Lift from Last Month</th>
+          <th colspan="2">Revenue</th>
+          <th>MIN</th>
+          <th>MAX</th>
+          <th>SLAB%</th>
+        </tr>
+        <tr height="50px">
+          <td>Slab 1</td>
+          <td>-10%</td>
+          <td>630</td>
+          <td>699</td>
+          <td>315</td>
+          <td>316</td>
+          <td>1%</td>
+        </tr>
+        <tr height="50px">
+          <td>Slab 2</td>
+          <td>0%</td>
+          <td>700</td>
+          <td>769</td>
+          <td>700</td>
+          <td>702</td>
+          <td>3%</td>
+        </tr>
+        <tr height="50px">
+          <td>Slab 3</td>
+          <td>10%</td>
+          <td>770</td>
+          <td>839</td>
+          <td>924</td>
+          <td>927</td>
+          <td>5%</td>
+        </tr>
+        <tr height="50px">
+          <td>Slab 4</td>
+          <td>20%</td>
+          <td>840</td>
+          <td>874</td>
+          <td>1260</td>
+          <td>1,263</td>
+          <td>10%</td>
+        </tr>
+        <tr height="50px">
+          <td>Slab 5</td>
+          <td>25%</td>
+          <td>875</td>
+          <td>1,050</td>
+          <td>1750</td>
+          <td>1,776</td>
+          <td>15%</td>
+        </tr>
+
+        <tr height="50px">
+          <th>Achieved Numbers</th>
+          <th>813</th>
+          <th>Final Revenue</th>
+          <th>926</th>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+
+        <tr height="50px">
+          <th>Monthly Target</th>
+          <th>3000</th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+
+        <tr height="50px">
+          <th></th>
+          <th></th>
+          <th></th>
+          <th>3,000</th>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+        <tr height="50px">
+          <th>SLAB</th>
+          <th>Lift from Last Month</th>
+          <th colspan="2">Revenue</th>
+          <th>MIN</th>
+          <th>MAX</th>
+          <th>SLAB%</th>
+        </tr>
+        <tr height="50px">
+          <td>Slab 1</td>
+          <td>-10%</td>
+          <td>2,700</td>
+          <td>2,999</td>
+          <td>1350</td>
+          <td>1,353</td>
+          <td>1%</td>
+        </tr>
+
+        <tr height="50px">
+          <td>Slab 2</td>
+          <td>0%</td>
+          <td>3,000</td>
+          <td>3,299</td>
+          <td>3000</td>
+          <td>3,007</td>
+          <td>3%</td>
+        </tr>
+        <tr height="50px">
+          <td>Slab 3</td>
+          <td>10%</td>
+          <td>3,300</td>
+          <td>3,599</td>
+          <td>3960</td>
+          <td>3,975</td>
+          <td>5%</td>
+        </tr>
+        <tr height="50px">
+          <td>Slab 4</td>
+          <td>20%</td>
+          <td>3,600</td>
+          <td>3,749</td>
+          <td>5400</td>
+          <td>5,415</td>
+          <td>10%</td>
+        </tr>
+        <tr height="50px">
+          <td>Slab 5</td>
+          <td>25%</td>
+          <td>3,750</td>
+          <td>4,500</td>
+          <td>7500</td>
+          <td>7,613</td>
+          <td>15%</td>
+        </tr>
+
+        <tr height="50px">
+          <th>Achieved Numbers</th>
+          <th>3800</th>
+          <th>Final Revenue</th>
+          <th>7508</th>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+
+        <tr height="50px">
+          <th>Annualy Target</th>
+          <th>40000</th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+        <tr height="50px">
+          <th></th>
+          <th></th>
+          <th></th>
+          <th>40,000</th>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+
+        <tr height="50px">
+          <th>SLAB</th>
+          <th>Lift from Last Month</th>
+          <th colspan="2">Revenue</th>
+          <th>MIN</th>
+          <th>MAX</th>
+          <th>SLAB%</th>
+        </tr>
+        <tr height="50px">
+          <td>Slab 1</td>
+          <td>-10%</td>
+          <td>36,000</td>
+          <td>39,999</td>
+          <td>18000</td>
+          <td>18,040</td>
+          <td>1%</td>
+        </tr>
+        <tr height="50px">
+          <td>Slab 2</td>
+          <td>0%</td>
+          <td>40,000</td>
+          <td>43,999</td>
+          <td>40000</td>
+          <td>40,100</td>
+          <td>3%</td>
+        </tr>
+        <tr height="50px">
+          <td>Slab 3</td>
+          <td>10%</td>
+          <td>44,000</td>
+          <td>47,999</td>
+          <td>52800</td>
+          <td>53,000</td>
+          <td>5%</td>
+        </tr>
+
+        <tr height="50px">
+          <td>Slab 4</td>
+          <td>20%</td>
+          <td>48,000</td>
+          <td>49,999</td>
+          <td>72000</td>
+          <td>72,200</td>
+          <td>10%</td>
+        </tr>
+        <tr height="50px">
+          <td>Slab 5</td>
+          <td>25%</td>
+          <td>50,000</td>
+          <td>60,000</td>
+          <td>100000</td>
+          <td>101,500</td>
+          <td>15%</td>
+        </tr>
+
+        <tr height="50px">
+          <th>Achieved Numbers</th>
+          <th>47000</th>
+          <th>Final Revenue</th>
+          <th>52950</th>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+      </table>
+    </section>
+    <!---------------table end-->
+    <!-----------second_join_our_hand start-->
+    <section class="container-fluid">
+      <section class="row table_adjustments">
+        <section class="col-xl-8 table_background pl-5">
+          <p
+            class="display-4"
+            style="
+              padding-top: 24vh;
+              font-size: 40px !important;
+              font-weight: 700 !important;
+            "
+          >
+            READY TO WORK WITH US?
+          </p>
+          <button
+            type="button"
+            class="btn btn-dark my-1"
+            style="font-weight: 600 !important"
+          >
+            Share your Link Now
+          </button>
+        </section>
+      </section>
+    </section>
+    <!-----------------add banner-->
+    <section class="container">
+      <section class="row add_banner">
+        <section class="col">
+          <section class="container-fluid">
+            <section class="row">
+              <section class="col-xl-12 col-lg-12 col-md-12 col-ms-12">
+                <section
+                  class="carousel my-5 carousel_container_padding"
+                  data-flickity='{"wrapAround":true,"autoPlay":true, "pageDots":false, "prevNextButtons" : false}'
+                >
+                  <section class="carousel-cell my-auto bg_yellow">
+                    <img src="images/main_taxi.jpeg" width="100%" alt="" />
+                  </section>
+                  <section class="carousel-cell bg_yellow">
+                    <img src="images/main_taxi.jpeg" width="100%" alt="" />
+                  </section>
+                  <section class="carousel-cell bg_yellow">
+                    <img src="images/main_taxi.jpeg" width="100%" alt="" />
+                  </section>
+                  <section class="carousel-cell bg_yellow">
+                    <img src="images/main_taxi.jpeg" width="100%" alt="" />
+                  </section>
+                </section>
+              </section>
+            </section>
+          </section>
+        </section>
+      </section>
+    </section>
+
+    <!--------------------------->
+    <section class="inputing_sizing">
+      <!--------------------JOIN OUR MAIL LIST FOR EXCLUSIVE start-->
+      <section class="container-fluid bg_yellow">
+        <section class="row text-center">
+          <section class="col">
+            <section class="container">
+              <section class="row padding_container join_exclusive_container">
+                <section class="col my-auto">
+                  <h2>JOIN OUR MAIL LIST FOR EXCLUSIVE</h2>
+                  <h1>Offers & Crazy Deals</h1>
+                  <form action="" method="POST">
+                    <p>
+                      <input
+                        type="text"
+                        name="fname"
+                        placeholder="Enter Your Name"
+                        id=""
+                      />&nbsp;&nbsp;<input
+                        type="email"
+                        name="email"
+                        placeholder="Enter Your Email"
+                        id=""
+                      />&nbsp;&nbsp;<br /><br />
+                      <button
+                        type="button"
+                        class="btn btn-dark"
+                        style="font-weight: 600 !important"
+                      >
+                        Submit
+                      </button>
+                    </p>
+                  </form>
+                </section>
+              </section>
+            </section>
+          </section>
+        </section>
+      </section>
+      <!----------------------lower footer start-->
+      <section class="container-fluid margin_footer_start">
+        <section class="row">
+          <section class="col">
+            <section class="container-fluid text-white">
+              <section class="row medium_footer_form_container">
+                <section
+                  class="
+                    col-xl-6 col-lg-6 col-md-12 col-sm-12
+                    padding_container
+                  "
+                >
+                  <h1>GET IN TOUCH</h1>
+                  <p>
+                    We can ensure reliability, low cost fares and most
+                    important, with safety and comfort in mind.
+                  </p>
+                  <p>
+                    Etiam sit amet convallis erat – class aptent taciti sociosqu
+                    ad litora torquent per conubia! Maecenas gravida lacus.
+                    Lorem etiam sit amet convallis erat.
+                  </p>
+                  <ul class="navigation_footer">
+                    <li>
+                      <a href="https://www.facebook.com/ParkingMudde"
+                        ><img
+                          src="social links/facebook.png"
+                          height="40px"
+                          alt=""
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="https://twitter.com/MuddeParking"
+                        ><img
+                          src="social links/twitter.png"
+                          height="40px"
+                          alt=""
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="https://www.instagram.com/parkingmudde/"
+                        ><img
+                          src="social links/instagram.png"
+                          height="40px"
+                          alt=""
+                      /></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.linkedin.com/in/parking-mudde-438601217/"
+                        ><img
+                          src="social links/linkedin.png"
+                          height="40px"
+                          alt=""
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="hello@parkingmudde.com"
+                        ><img src="social links/email.png" height="40px" alt=""
+                      /></a>
+                    </li>
+                  </ul>
+                </section>
+                <section
+                  class="
+                    col-xl-6 col-lg-6 col-md-12 col-sm-12
+                    text-center
+                    bg_yellow
+                    padding_container
+                    medium_footer_form_container_second
+                  "
+                >
+                  <form action="" method="POST">
+                    <p class="left_text">Email</p>
+                    <p>
+                      <input
+                        type="email"
+                        name="email"
+                        placeholder="Enter Your Email"
+                        id=""
+                      />
+                    </p>
+                    <p class="left_text">Name</p>
+                    <p>
+                      <input
+                        type="text"
+                        name="fname"
+                        placeholder="Enter Your Name"
+                        id=""
+                      />
+                    </p>
+                    <p class="left_text">Message</p>
+                    <p id="textareabold">
+                      <textarea
+                        name="message"
+                        placeholder="Enter Your Message"
+                        id=""
+                        cols="30"
+                        rows="10"
+                      ></textarea>
+                    </p>
+                    <p>
+                      <button
+                        type="button"
+                        class="btn btn-dark"
+                        style="font-weight: 600 !important"
+                      >
+                        Submit
+                      </button>
+                    </p>
+                  </form>
+                </section>
+              </section>
+            </section>
+          </section>
+        </section>
+      </section>
+      <!---------------------footer start-->
+    </section>
+    <!--------------------------->
+    <section class="container-fluid lower_footer">
+      <section class="row">
+        <section class="col">
+          <section class="container">
+            <section class="row lower_footer_height text-center">
+              <section class="col my-auto" style="color: white">
+                Sample text. Click to select the text box. Click again or double
+                click to start editing the text. <br />
+                Website Templates created with Website Builder Software. <br />
+                all rights reserved 2021
+              </section>
+            </section>
+          </section>
+        </section>
+      </section>
+    </section>
+    <!-- Optional JavaScript -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

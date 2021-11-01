@@ -1,0 +1,2211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <script src="jQuery.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#mainbutton_right_side").click(function () {
+          $(".navigation_start_here").slideToggle();
+          $("#main_iconic").toggle();
+        });
+        $(".hello1").hover(function () {
+          $(".car_image_container .right_to_left").css({
+            " animation-iteration-count ": 2,
+            "margin-left": "0px",
+            transition: "2s",
+          });
+        });
+        $(".hello2").hover(function () {
+          $(".car_image_container .left_to_right").css({
+            " animation-iteration-count ": 2,
+            "margin-left": "0px",
+            transition: "2s",
+          });
+        });
+        $(".counter-count").each(function () {
+          $(this)
+            .prop("Counter", 0)
+            .animate(
+              {
+                Counter: $(this).text(),
+              },
+              {
+                duration: 5000,
+                easing: "swing",
+                step: function (now) {
+                  $(this).text(Math.ceil(now));
+                },
+              }
+            );
+        });
+      });
+    </script>
+    <title>Parknig Mudde</title>
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      #loading_screen {
+        position: fixed;
+        z-index: 9999999999999999999900000909099000090990909999999999;
+        width: 100%;
+        height: 100vh;
+        background: #fff url("images/Processing\ Gif.gif") no-repeat center;
+      }
+      /*****************loading end***********/
+      .left_car_ing_container {
+        margin-left: -400px;
+      }
+      .this_is_for_fun_main:hover .left_car_ing_container {
+        margin-left: -220px;
+        transition: all 3s;
+      }
+      .car_sliding_main_right_to_leftt {
+        margin-left: 400px;
+      }
+      .this_is_for_fun_main:hover .car_sliding_main_right_to_leftt {
+        margin-left: 60px;
+        transition: all 3s;
+      }
+      body {
+        position: relative;
+      }
+      #hello_come_top {
+        bottom: -40px;
+      }
+      #hello_come_top:hover {
+        bottom: 0px;
+      }
+      @media (max-width: 653px) {
+        .thisisforfunmain img {
+          height: 40px !important;
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="css/blackicon.css" />
+  </head>
+  <body onload="myFunction()">
+    <!---------------------------------loader start-->
+    <div id="loading_screen"></div>
+    <!---------------------------------loader end-->
+    <section
+      class="whats_app_icon"
+      style="
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        z-index: 10000000000000000000000000;
+      "
+    >
+      <a href="#">
+        <img src="icon/whatsapp.png" height="60px" width="60px" alt=""
+      /></a>
+    </section>
+    <!----------------whats app-->
+    <section
+      class="go_to_top"
+      id="hello_come_top"
+      style="position: fixed; right: 40px; z-index: 100000000000000000000000"
+    >
+      <a href="#">
+        <img src="images/iconicon.png" height="90px" width="70px" alt=""
+      /></a>
+    </section>
+    <!------------------------go to top icon-->
+    <section class="hegoing container-fluid">
+      <section class="container-fluid">
+        <section class="row parent_navigation_start">
+          <section class="col">
+            <section
+              class="navigation_start_here"
+              style="font-size: 18px !important"
+            >
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="our story.html">Our Story</a></li>
+                <li><a href="news and blogs.html">News & Blogs</a></li>
+                <li>
+                  <a href="join our hand.html"
+                    >Join our hands - Partner with us</a
+                  >
+                </li>
+                <li><a href="help center.html">Help & Support</a></li>
+                <li><a href="register.html">Register With Us!</a></li>
+                <li><a href="login.html">Login</a></li>
+              </ul>
+            </section>
+            <img
+              src="images/mainmain.png"
+              height="40px"
+              width="40px"
+              alt=""
+              id="mainbutton_right_side"
+            />
+          </section>
+        </section>
+      </section>
+      <section class="row text-center">
+        <section class="col thisisforfunmain">
+          <br />
+          <img
+            id="main_iconic"
+            src="main/Parking-Mudde-final.png"
+            height="60px"
+            alt=""
+            id="helo_image_logo_main"
+          />
+        </section>
+      </section>
+    </section>
+    <!---------------------------video slider start-->
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide hello justing"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="3"
+          aria-label="Slide 4"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="4"
+          aria-label="Slide 5"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <video class="video-fluid" width="100%" autoplay loop muted>
+            <source src="videos/Intro-video.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="carousel-item">
+          <video class="video-fluid" width="100%" autoplay loop muted>
+            <source src="videos/Intro-video.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="carousel-item">
+          <video class="video-fluid" width="100%" autoplay loop muted>
+            <source src="videos/Intro-video.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="carousel-item">
+          <video class="video-fluid" width="100%" autoplay loop muted>
+            <source src="videos/Intro-video.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="carousel-item">
+          <video class="video-fluid" width="100%" autoplay loop muted>
+            <source src="videos/Intro-video.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+        style="background-color: transparent !important"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        style="background-color: transparent !important"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+      <section class="hover_container">
+        <h1 style="font-size: 34px !important; color: white !important">
+          “Bharat ka No.1 Digital Platform for All Parking Solutions”
+        </h1>
+      </section>
+    </div>
+    <!------------------------on hover card for vehicel owner start-->
+    <section class="container-fluid bg_yellow my-4">
+      <section class="row">
+        <section
+          class="col-xl-6 col-lg-6 col-md-12 col-sm-12 image_padding my-5"
+        >
+          <a href="driver.html">
+            <div
+              class="card mb-3 mx-auto mian_pointer"
+              style="max-width: 540px"
+            >
+              <div class="row no-gutters">
+                <div class="col-md-4 my-auto">
+                  <img src="main/parking1.png" width="100%" alt="..." />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h1 class="card-title">Parking Owner?</h1>
+                    <h2>Earn with us!</h2>
+                    <p class="card-text">Let your parking go digital,</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </section>
+        <section
+          class="col-xl-6 col-lg-6 col-md-12 col-sm-12 image_padding my-5"
+        >
+          <a href="owner.html">
+            <div
+              class="card mb-3 mx-auto mian_pointer"
+              style="max-width: 540px"
+            >
+              <div class="row no-gutters">
+                <div class="col-md-4 my-auto">
+                  <img src="main/parking2.png" alt="..." />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h1 class="card-title">Vehicle Owner?</h1>
+                    <h2>Register with us!</h2>
+                    <p class="card-text">Let your vehicle go digital.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </section>
+      </section>
+    </section>
+    <!------------------------on hover card for vehicel owner end-->
+
+    <!-------------------------What is ParkingMudde India LLP start-->
+    <section class="container my-1">
+      <section class="row">
+        <section class="col">
+          <section class="container">
+            <section class="row contant_min_height padding_container">
+              <section class="col-xl-6 col-lg-6 col-md-12 col-sm-12 my-auto">
+                <h1>ParkingMudde® India LLP?</h1>
+                <p>
+                  ParkingMudde® India LLP. has come up with an unique idea: A
+                  Mobile Application Which Let your vehicle & parking go digital
+                  or in other words Digital Platform for All Wrong Parking &
+                  Parking Solutions “The ParkingMudde® Application”. to solve
+                  end-to-end parking related problems.
+                </p>
+                <section class="button_hover">
+                  <img src="images/apple.png" alt="" />&nbsp;&nbsp;
+                  <img src="images/google.png" alt="" />
+                </section>
+              </section>
+              <section
+                class="
+                  col-xl-6 col-lg-6 col-md-12 col-sm-12
+                  text-center
+                  displaying_none_phone
+                  padding_for_phone_image
+                "
+              >
+                <img src="images/phone_one.png" alt="" />
+              </section>
+            </section>
+          </section>
+        </section>
+      </section>
+    </section>
+
+    <!-------------------GET MORE BENEFITS start-->
+    <section class="container-fluid bg_yellow">
+      <section class="row padding_container">
+        <section class="col">
+          <section class="container hello_padandnaslnd">
+            <section class="center_text">
+              <h2>GET MORE BENEFITS</h2>
+              <h1>DOWNLOAD THE APP</h1>
+            </section>
+            <section class="row">
+              <section class="col-xl-4 col-lg-4 col-md-12 sol-sm-12 my-auto">
+                <section class="main_gg_container">
+                  <ul>
+                    <li>
+                      <img src="icon/1.png" alt="" />
+                      <div>
+                        <span
+                          ><h1 style="font-size: 24px !important">
+                            Reporting Alerts
+                          </h1>
+                        </span>
+                        <p>Report a vehicle on Wrongly Parked!</p>
+                      </div>
+                    </li>
+                    <li>
+                      <img src="icon/2.png" alt="" />
+                      <div>
+                        <span
+                          ><h1 style="font-size: 24px !important">
+                            Verified Paid Parking
+                          </h1>
+                        </span>
+                        <p>Now book & Pay in advance only for what you use!</p>
+                      </div>
+                    </li>
+                    <li>
+                      <img src="icon/3.png" alt="" />
+                      <div>
+                        <span
+                          ><h1 style="font-size: 24px !important">
+                            Register your Parking
+                          </h1></span
+                        >
+                        <p>
+                          Space owner? For the first time! Register your space
+                          with us and earn for renting your parking space!
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <img src="icon/4.png" alt="" />
+                      <div>
+                        <span
+                          ><h1 style="font-size: 24px !important">
+                            SSL Secure documents locker
+                          </h1></span
+                        >
+                        <p>No more need to carry your vehicle documents</p>
+                      </div>
+                    </li>
+                    <li>
+                      <img src="main/Register Vehicle.png" alt="" />
+                      <div>
+                        <span
+                          ><h1 style="font-size: 24px !important">
+                            Register your Vehicle
+                          </h1></span
+                        >
+                        <p>
+                          Add your vehicle to help people find and connect you
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </section>
+              </section>
+              <section
+                class="
+                  col-xl-4 col-lg-4 col-md-12
+                  sol-sm-12
+                  text-center
+                  padding_for_fun_image
+                  my-auto
+                  pt-5
+                "
+              >
+                <img
+                  src="images/screen.jpg"
+                  id="mobile_height"
+                  style="border-radius: 40px"
+                  width="
+                  75% !important"
+                  alt=""
+                />
+              </section>
+              <section class="col-xl-4 col-lg-4 col-md-12 sol-sm-12 my-auto">
+                <section class="main_gg_container">
+                  <ul>
+                    <li>
+                      <img src="icon/6.png" alt="" />
+                      <div>
+                        <span
+                          ><h1 style="font-size: 24px !important">
+                            Helping Alerts
+                          </h1>
+                        </span>
+                        <p>Help the community</p>
+                      </div>
+                    </li>
+                    <li>
+                      <img src="icon/7.png" alt="" />
+                      <div>
+                        <span
+                          ><h1 style="font-size: 24px !important">
+                            Buy vehicle
+                          </h1>
+                        </span>
+                        <p>
+                          Single Platform for all verified vehicle owners
+                          selling their vehicles
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <img src="main/ParkingMudde Wallet.png" alt="" />
+                      <div>
+                        <span
+                          ><h1 style="font-size: 24px !important">
+                            ParkingMudde Wallet
+                          </h1></span
+                        >
+                        <p>
+                          Pay with ParkingMudde coins and get coinsback &
+                          rewards on every transaction made
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <img src="main/Expiry & Renewal Alerts.png" alt="" />
+                      <div>
+                        <span
+                          ><h1 style="font-size: 24px !important">
+                            Expiry & Renewal Alerts
+                          </h1></span
+                        >
+                        <p>
+                          No more need to remember your vehicle documents expiry
+                          & renewal dates
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <img src="main/Vehicle Ownership Transfer.png" alt="" />
+                      <div>
+                        <span
+                          ><h1 style="font-size: 24px !important">
+                            Transfer Vehicle Ownership
+                          </h1></span
+                        >
+                        <p>
+                          Vehicle Sold! Update with us to be safe for the
+                          future.
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </section>
+              </section>
+            </section>
+          </section>
+        </section>
+      </section>
+    </section>
+    <!-------------------------how its work start-->
+    <section class="container" style="margin-top: 20px">
+      <section class="row text-center">
+        <section class="col">
+          <h1 style="font-weight: 600 !important">How it Works</h1>
+          <h2>What ParkingMudde® Application Do?</h2>
+        </section>
+      </section>
+    </section>
+    <section class="container text-center">
+      <section class="row padding_container hello_how_it_works">
+        <section class="col">
+          <div
+            class="main-carousel"
+            data-flickity='{ "autoPlay": true, "pageDots": false }'
+          >
+            <div class="carousel-cell">
+              <section class="container-fluid">
+                <section class="row">
+                  <section
+                    class="
+                      col-xl-5 col-lg-5 col-md-6 col-sm-12
+                      main_hidden_phone_container
+                      my-auto
+                    "
+                  >
+                    <img
+                      src="images/screen.jpg"
+                      style="border-radius: 40px"
+                      width="60%"
+                      alt=""
+                    />
+                  </section>
+                  <section
+                    class="
+                      col-xl-7 col-lg-7 col-md-12 col-sm-12
+                      my-auto
+                      pl-5
+                      pr-4
+                      padding_container
+                    "
+                  >
+                    <span class="big_textting_how_it_work">1</span
+                    ><br /><br /><br />
+                    <h1 style="font-weight: 600 !important">
+                      Parking Made Easy
+                    </h1>
+                    <h2 style="font-size: 20px !important">
+                      Let’s Sign up/Register to fight against All Parking Muddes
+                      India’s No. 1 Digital Parking Solution App - sub heading
+                    </h2>
+                  </section>
+                </section>
+              </section>
+            </div>
+            <div class="carousel-cell">
+              <section class="container-fluid">
+                <section class="row">
+                  <section
+                    class="
+                      col-xl-5 col-lg-5 col-md-6 col-sm-12
+                      main_hidden_phone_container
+                    "
+                  >
+                    <img
+                      src="images/screen.jpg"
+                      style="border-radius: 40px"
+                      width="60%"
+                      alt=""
+                    />
+                  </section>
+                  <section
+                    class="
+                      col-xl-7 col-lg-7 col-md-12 col-sm-12
+                      my-auto
+                      pl-5
+                      pr-4
+                      padding_container
+                    "
+                  >
+                    <span class="big_textting_how_it_work">2</span
+                    ><br /><br /><br />
+                    <h1 style="font-weight: 600 !important">
+                      Bumped with an unknown illegally parked vehicle? Or a
+                      vehicle with a parking error?
+                    </h1>
+                    <h2 style="font-size: 20px !important">
+                      Just Scan to SMS, Email, Call & Inform Emergency contacts
+                      of the vehicle owner. <br />
+                      Join us! To alert the community by helping them with their
+                      parking errors & Get rewarded.
+                    </h2>
+                  </section>
+                </section>
+              </section>
+            </div>
+            <div class="carousel-cell">
+              <section class="container-fluid">
+                <section class="row">
+                  <section
+                    class="
+                      col-xl-5 col-lg-5 col-md-6 col-sm-12
+                      main_hidden_phone_container
+                    "
+                  >
+                    <img
+                      src="images/screen.jpg"
+                      style="border-radius: 40px"
+                      width="60%"
+                      alt=""
+                    />
+                  </section>
+                  <section
+                    class="
+                      col-xl-7 col-lg-7 col-md-12 col-sm-12
+                      my-auto
+                      pl-5
+                      padding_container
+                      pr-4
+                    "
+                  >
+                    <span class="big_textting_how_it_work">3</span
+                    ><br /><br /><br />
+                    <h1 style="font-weight: 600 !important">
+                      Choose a vehicle from the Vehicle’s Library
+                    </h1>
+                    <h2 style="font-size: 20px !important">
+                      Find Free, Paid & Verified parking space Start saving!
+                    </h2>
+                  </section>
+                </section>
+              </section>
+            </div>
+            <div class="carousel-cell">
+              <section class="container-fluid">
+                <section class="row">
+                  <section
+                    class="
+                      col-xl-5 col-lg-5 col-md-6 col-sm-12
+                      main_hidden_phone_container
+                    "
+                  >
+                    <img
+                      src="images/screen.jpg"
+                      style="border-radius: 40px"
+                      width="60%"
+                      alt=""
+                    />
+                  </section>
+                  <section
+                    class="
+                      col-xl-7 col-lg-7 col-md-12 col-sm-12
+                      my-auto
+                      padding_container
+                    "
+                  >
+                    <span class="big_textting_how_it_work">4</span
+                    ><br /><br /><br />
+                    <h1 style="font-weight: 600 !important">
+                      Space Owner? Get register Get Paid
+                    </h1>
+                    <h2 style="font-size: 20px !important">
+                      Ever earned from your parking space? Yes! It’s true.
+                      Unlimited earning without any hassle.
+                    </h2>
+                  </section>
+                </section>
+              </section>
+            </div>
+            <div class="carousel-cell">
+              <section class="container-fluid">
+                <section class="row">
+                  <section
+                    class="
+                      col-xl-5 col-lg-5 col-md-6 col-sm-12
+                      main_hidden_phone_container
+                    "
+                  >
+                    <img
+                      src="images/screen.jpg"
+                      style="border-radius: 40px"
+                      width="60%"
+                      alt=""
+                    />
+                  </section>
+                  <section
+                    class="
+                      col-xl-7 col-lg-7 col-md-12 col-sm-12
+                      my-auto
+                      pl-5
+                      padding_container
+                      pr-4
+                    "
+                  >
+                    <span class="big_textting_how_it_work">5</span
+                    ><br /><br /><br />
+                    <h1 style="font-weight: 600 !important">
+                      Finding? Right buyer & Right price for your vehicle!
+                    </h1>
+                    <h2 style="font-size: 20px !important">
+                      Search over! Now get verified buyers in just one tap. Sold
+                      your vehicle! Update with us and be secured with all
+                      future consequences
+                    </h2>
+                  </section>
+                </section>
+              </section>
+            </div>
+            <div class="carousel-cell">
+              <section class="container-fluid">
+                <section class="row">
+                  <section
+                    class="
+                      col-xl-5 col-lg-5 col-md-6 col-sm-12
+                      main_hidden_phone_container
+                    "
+                  >
+                    <img
+                      src="images/screen.jpg"
+                      style="border-radius: 40px"
+                      width="60%"
+                      alt=""
+                    />
+                  </section>
+                  <section
+                    class="
+                      col-xl-7 col-lg-7 col-md-12 col-sm-12
+                      my-auto
+                      pl-5
+                      padding_container
+                      pr-4
+                    "
+                  >
+                    <span class="big_textting_how_it_work">6</span
+                    ><br /><br /><br />
+                    <h1 style="font-weight: 600 !important">
+                      No more! Need of vehicle physical documents while driving.
+                    </h1>
+                    <h2 style="font-size: 20px !important">
+                      Need to remember your vehicle documents expiry and
+                      renewals? We are always there for you!
+                    </h2>
+                  </section>
+                </section>
+              </section>
+            </div>
+            <div class="carousel-cell">
+              <section class="container-fluid">
+                <section class="row">
+                  <section
+                    class="
+                      col-xl-5 col-lg-5 col-md-6 col-sm-12
+                      main_hidden_phone_container
+                    "
+                  >
+                    <img
+                      src="images/screen.jpg"
+                      style="border-radius: 40px"
+                      width="60%"
+                      alt=""
+                    />
+                  </section>
+                  <section
+                    class="
+                      col-xl-7 col-lg-7 col-md-12 col-sm-12
+                      my-auto
+                      pl-5
+                      padding_container
+                      pr-4
+                    "
+                  >
+                    <span class="big_textting_how_it_work">7</span
+                    ><br /><br /><br />
+                    <h1 style="font-weight: 600 !important">
+                      Top-ups with bumper benefits
+                    </h1>
+                    <h2 style="font-size: 20px !important">
+                      Overloaded & with extra benefits subscription packages.
+                    </h2>
+                    <h2 style="font-size: 20px !important">
+                      Get Unlimited Coinsback, Rewards & Discount offers India’s
+                      First Rewarding parking e-Wallet.
+                    </h2>
+                  </section>
+                </section>
+              </section>
+            </div>
+            <div class="carousel-cell">
+              <section class="container-fluid">
+                <section class="row">
+                  <section
+                    class="
+                      col-xl-5 col-lg-5 col-md-6 col-sm-12
+                      main_hidden_phone_container
+                    "
+                  >
+                    <img
+                      src="images/screen.jpg"
+                      style="border-radius: 40px"
+                      width="60%"
+                      alt=""
+                    />
+                  </section>
+                  <section
+                    class="
+                      col-xl-7 col-lg-7 col-md-12 col-sm-12
+                      my-auto
+                      pl-5
+                      padding_container
+                      pr-4
+                    "
+                  >
+                    <span class="big_textting_how_it_work">8</span
+                    ><br /><br /><br />
+                    <h1 style="font-weight: 600 !important">
+                      Pre-book your parking lot.
+                    </h1>
+                    <h2 style="font-size: 20px !important">
+                      Pay only for your parking minutes used. (No
+                      additional/hidden Charges) Get on with your day.
+                    </h2>
+                  </section>
+                </section>
+              </section>
+            </div>
+            <div class="carousel-cell">
+              <section class="container-fluid">
+                <section class="row">
+                  <section
+                    class="
+                      col-xl-5 col-lg-5 col-md-6 col-sm-12
+                      main_hidden_phone_container
+                    "
+                  >
+                    <img
+                      src="images/screen.jpg"
+                      style="border-radius: 40px"
+                      width="60%"
+                      alt=""
+                    />
+                  </section>
+                  <section
+                    class="
+                      col-xl-7 col-lg-7 col-md-12 col-sm-12
+                      my-auto
+                      pl-5
+                      padding_container
+                      pr-4
+                    "
+                  >
+                    <span class="big_textting_how_it_work">9</span
+                    ><br /><br /><br />
+                    <h1 style="font-weight: 600 !important">Stay safe</h1>
+                    <h2 style="font-size: 20px !important">
+                      Contactless Parking Ticket Download or Email your parking
+                      receipt in just one tap
+                    </h2>
+                  </section>
+                </section>
+              </section>
+            </div>
+            <div class="carousel-cell">
+              <section class="container-fluid">
+                <section class="row">
+                  <section
+                    class="
+                      col-xl-5 col-lg-5 col-md-6 col-sm-12
+                      main_hidden_phone_container
+                    "
+                  >
+                    <img
+                      src="images/screen.jpg"
+                      style="border-radius: 40px"
+                      width="60%"
+                      alt=""
+                    />
+                  </section>
+                  <section
+                    class="
+                      col-xl-7 col-lg-7 col-md-12 col-sm-12
+                      my-auto
+                      pl-5
+                      padding_container
+                      pr-4
+                    "
+                  >
+                    <span
+                      class="big_textting_how_it_work"
+                      style="padding: 1% 2.3%"
+                      >10</span
+                    ><br /><br /><br />
+                    <h1 style="font-weight: 600 !important">Join our club!</h1>
+                    <h2 style="font-size: 20px !important">
+                      “Smart Parking Safe Parking” Parking is a service, not a
+                      public right
+                    </h2>
+                  </section>
+                </section>
+              </section>
+            </div>
+          </div>
+        </section>
+      </section>
+    </section>
+    <!-------------------------FOR PARKING OWENERS start-->
+    <section class="container-fluid bg_yellow car_animation hello1 my-2">
+      <section class="row padding_container this_is_for_fun_main my-5">
+        <section
+          class="
+            col-xl-7 col-lg-7 col-md-12 col-sm-12 col-
+            my-auto
+            padding_left_text_container_car
+          "
+        >
+          <h2 style="font-weight: 600 !important; font-size: 20px !important">
+            FOR PARKING OWENERS
+          </h2>
+          <h1>Earn with us! Let your parking go digital.</h1>
+          <p>
+            Are you a Private Parking Space Owner or Business Parking Space
+            Owner?
+          </p>
+          <p>
+            For the first time in Bharat! Get your parking spaces registered
+            with us and be safe from unknown parked vehicles and manage all your
+            parking records and solve all your problems by getting a verified
+            owner vehicle parked in your parking space from the Parking Mudde
+            app.
+          </p>
+          <section class="container-fluid">
+            <section class="row">
+              <section class="col">
+                <table width="100%" style="font-weight: 600 !important">
+                  <tr>
+                    <td style="position: relative" width="22px">
+                      <img
+                        src="icon/check.png"
+                        width="16px"
+                        height="16px"
+                        alt=""
+                        style="position: absolute; top: 5px"
+                      />
+                    </td>
+                    <td>Scan & Connect with Real Vehicle Owner</td>
+                  </tr>
+                  <tr>
+                    <td style="position: relative">
+                      <img
+                        src="icon/check.png"
+                        width="16px"
+                        height="16px"
+                        alt=""
+                        style="position: absolute; top: 5px"
+                      />
+                    </td>
+                    <td>Get Verified Vehicle Owners</td>
+                  </tr>
+                  <tr>
+                    <td style="position: relative">
+                      <img
+                        src="icon/check.png"
+                        width="16px"
+                        height="16px"
+                        alt=""
+                        style="position: absolute; top: 5px"
+                      />
+                    </td>
+                    <td>Track Parking Records easily</td>
+                  </tr>
+                </table>
+              </section>
+              <section class="col">
+                <table width="100%" style="font-weight: 600 !important">
+                  <tr>
+                    <td style="position: relative">
+                      <img
+                        src="icon/check.png"
+                        width="16px"
+                        height="16px"
+                        alt=""
+                        style="position: absolute; top: 5px"
+                      />
+                    </td>
+                    <td>Get paid in advance for bookings</td>
+                  </tr>
+                  <tr>
+                    <td style="position: relative" width="22px">
+                      <img
+                        src="icon/check.png"
+                        width="16px"
+                        height="16px"
+                        alt=""
+                        style="position: absolute; top: 5px"
+                      />
+                    </td>
+                    <td>No more! need of taking vehicle keys</td>
+                  </tr>
+                  <tr>
+                    <td style="position: relative">
+                      <img
+                        src="icon/check.png"
+                        width="16px"
+                        height="16px"
+                        alt=""
+                        style="position: absolute; top: 5px"
+                      />
+                    </td>
+                    <td>
+                      No more! need of paper receipts - Font size - Content with
+                      Ticks on the left side.
+                    </td>
+                  </tr>
+                </table>
+              </section>
+            </section>
+          </section>
+          <button type="btn" class="btn btn-dark my-5">
+            Let your parking go digital!
+          </button>
+        </section>
+        <section class="col-xl-5 col-lg-5 col-md-12 col-sm-12">
+          <img
+            src="images/car-big-side.png"
+            id=""
+            class="car_sliding_main_right_to_leftt"
+            height="500px"
+            alt=""
+          />
+        </section>
+      </section>
+    </section>
+    <!------------------------FOR VEHICLE OWNERS start-->
+    <section
+      class="
+        container-fluid
+        my-2
+        car_animation car_animation1
+        this_is_for_fun_main
+        hello2
+      "
+    >
+      <section class="row padding_container my-5 this_is_for_fun_main">
+        <section class="col-xl-5 col-lg-5 col-md-12 col-sm-12 overflow-hidden">
+          <img
+            src="images/lefttorightcar.png"
+            height="500px"
+            id="hidden_car_image"
+            class="left_car_ing_container"
+            alt=""
+            id="left_to_right_container_main_box"
+          />
+        </section>
+        <section
+          class="
+            col-xl-7 col-lg-7 col-md-12 col-sm-12
+            my-auto
+            padding_left_text_container_car
+          "
+        >
+          <p style="font-weight: 600 !important; font-size: 20px !important">
+            FOR VEHICLE OWNERS
+          </p>
+          <h1>Register with us! Let your vehicle go digital</h1>
+          <p>
+            No more putting your contact details on your vehicle dashboards.
+            Park your vehicle in verified parking spaces. No more! Providing
+            your vehicle keys to the parking owner! Don’t worry! Now anyone can
+            alert you for your parking errors.
+          </p>
+          <section class="container-fluid">
+            <section class="row my-3">
+              <section class="col">
+                <table width="100%" style="font-weight: 600 !important">
+                  <tr>
+                    <td style="position: relative" width="22px">
+                      <img
+                        src="icon/check.png"
+                        width="16px"
+                        height="16px"
+                        alt=""
+                        style="position: absolute; top: 5px"
+                      />
+                    </td>
+                    <td>Scan & Connect with Real Vehicle Owner</td>
+                  </tr>
+                  <tr>
+                    <td style="position: relative">
+                      <img
+                        src="icon/check.png"
+                        width="16px"
+                        height="16px"
+                        alt=""
+                        style="position: absolute; top: 5px"
+                      />
+                    </td>
+                    <td>Free, paid & verified parking spaces near you!</td>
+                  </tr>
+                  <tr>
+                    <td style="position: relative">
+                      <img
+                        src="icon/check.png"
+                        width="16px"
+                        height="16px"
+                        alt=""
+                        style="position: absolute; top: 5px"
+                      />
+                    </td>
+                    <td>Lowest Parking Fares</td>
+                  </tr>
+                  <tr>
+                    <td style="position: relative">
+                      <img
+                        src="icon/check.png"
+                        width="16px"
+                        height="16px"
+                        alt=""
+                        style="position: absolute; top: 5px"
+                      />
+                    </td>
+                    <td>Carry your Digital Document Locker</td>
+                  </tr>
+                  <tr>
+                    <td style="position: relative">
+                      <img
+                        src="icon/check.png"
+                        width="16px"
+                        height="16px"
+                        alt=""
+                        style="position: absolute; top: 5px"
+                      />
+                    </td>
+                    <td>Vehicle Sold! Update Information</td>
+                  </tr>
+                </table>
+              </section>
+              <section class="col">
+                <table width="100%" style="font-weight: 600 !important">
+                  <tr>
+                    <td style="position: relative" width="22px">
+                      <img
+                        src="icon/check.png"
+                        width="16px"
+                        height="16px"
+                        alt=""
+                        style="position: absolute; top: 5px"
+                      />
+                    </td>
+                    <td>Pay for what you have used</td>
+                  </tr>
+                  <tr>
+                    <td style="position: relative">
+                      <img
+                        src="icon/check.png"
+                        width="16px"
+                        height="16px"
+                        alt=""
+                        style="position: absolute; top: 5px"
+                      />
+                    </td>
+                    <td>Download or email your parking receipt</td>
+                  </tr>
+                  <tr>
+                    <td style="position: relative">
+                      <img
+                        src="icon/check.png"
+                        width="16px"
+                        height="16px"
+                        alt=""
+                        style="position: absolute; top: 5px"
+                      />
+                    </td>
+                    <td>Early Alerts! On documents expiry and renewals</td>
+                  </tr>
+                  <tr>
+                    <td style="position: relative">
+                      <img
+                        src="icon/check.png"
+                        width="16px"
+                        height="16px"
+                        alt=""
+                        style="position: absolute; top: 5px"
+                      />
+                    </td>
+                    <td>
+                      Selling a Vehicle! Get verified Vehicle buyers & sellers
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="position: relative">
+                      <img
+                        src="icon/check.png"
+                        width="16px"
+                        height="16px"
+                        alt=""
+                        style="position: absolute; top: 5px"
+                      />
+                    </td>
+                    <td>Early Alerts! On documents expiry and renewals</td>
+                  </tr>
+                </table>
+              </section>
+            </section>
+          </section>
+          <button type="btn" class="btn btn-dark my-5">
+            Let your vehicle go digital!
+          </button>
+        </section>
+      </section>
+    </section>
+
+    <!----------------------The Future That You Will See Soon start-->
+    <section class="container-fluid bg_yellow my-4">
+      <section class="row text-center padding_container">
+        <section class="col">
+          <h1>
+            <span
+              style="font-size: 35px !important; font-weight: 600 !important"
+              >The Future That You</span
+            >
+            <br />
+            <span
+              style="
+                color: royalblue !important;
+                font-size: 40px !important;
+                font-weight: 600 !important;
+              "
+              >Will See Soon</span
+            >
+          </h1>
+          <!---------------------->
+          <section class="container-fluid">
+            <section class="row">
+              <section class="col">
+                <section class="flexing_container">
+                  <section class="flexing_dataon">
+                    <div class="card-body" style="width: 100%">
+                      <section class="big_text">
+                        <img
+                          src="icon/d1.png"
+                          width="100%"
+                          height="100%"
+                          alt=""
+                        />
+                      </section>
+                      <div class="card-body">
+                        <h2
+                          style="font-weight: 600 !important"
+                          class="card-title"
+                        >
+                          Smart & Safe Parking Policy
+                        </h2>
+                        <p class="card-text">
+                          Get yourself insurance for every parking you use for
+                          your vehicle.
+                        </p>
+                      </div>
+                    </div>
+                  </section>
+                  <section class="flexing_dataon">
+                    <div class="card-body">
+                      <section class="big_text">
+                        <img
+                          src="main/bribe.png"
+                          width="100%"
+                          height="100%"
+                          alt=""
+                        />
+                      </section>
+                      <div class="card-body">
+                        <h2
+                          style="font-weight: 600 !important"
+                          class="card-title"
+                        >
+                          Know your Parking challan
+                        </h2>
+                        <p class="card-text">
+                          Now! Get all information about your parking challan
+                        </p>
+                      </div>
+                    </div>
+                  </section>
+                  <section class="flexing_dataon">
+                    <div class="card-body">
+                      <section class="big_text">
+                        <img
+                          src="icon/d2.png"
+                          width="100%"
+                          height="100%"
+                          alt=""
+                        />
+                      </section>
+                      <div class="card-body">
+                        <h2
+                          style="font-weight: 600 !important"
+                          class="card-title"
+                        >
+                          Vehicle Service History
+                        </h2>
+                        <p class="card-text">
+                          Be always updated with your vehicle service records &
+                          history
+                        </p>
+                      </div>
+                    </div>
+                  </section>
+                  <section class="flexing_dataon">
+                    <div class="card-body">
+                      <section class="big_text">
+                        <img
+                          src="main/pay-challan.png"
+                          width="100%"
+                          height="100%"
+                          alt=""
+                        />
+                      </section>
+                      <div class="card-body">
+                        <h2
+                          style="font-weight: 600 !important"
+                          class="card-title"
+                        >
+                          Pay your parking challan
+                        </h2>
+                        <p class="card-text">
+                          Pay your challan easily in one tap
+                        </p>
+                      </div>
+                    </div>
+                  </section>
+                  <section class="flexing_dataon">
+                    <div class="card-body">
+                      <section class="big_text">
+                        <img
+                          src="icon/d3.png"
+                          width="100%"
+                          height="100%"
+                          alt=""
+                        />
+                      </section>
+                      <div class="card-body">
+                        <h2
+                          style="font-weight: 600 !important"
+                          class="card-title"
+                        >
+                          Vehicle Service at your doorstep
+                        </h2>
+                        <p class="card-text">
+                          Sit Back & Relax! Get your vehicle serviced at your
+                          doorstep
+                        </p>
+                      </div>
+                    </div>
+                  </section>
+                  <section class="flexing_dataon">
+                    <div class="card-body">
+                      <section class="big_text">
+                        <img
+                          src="icon/d8.png"
+                          width="100%"
+                          height="100%"
+                          alt=""
+                        />
+                      </section>
+                      <div class="card-body">
+                        <h2
+                          style="font-weight: 600 !important"
+                          class="card-title"
+                        >
+                          Know if your vehicle is towed?
+                        </h2>
+                        <p class="card-text">
+                          Vehicle Towed? Now find your vehicle location
+                        </p>
+                      </div>
+                    </div>
+                  </section>
+                  <section class="flexing_dataon">
+                    <div class="card-body">
+                      <section class="big_text">
+                        <img
+                          src="icon/d4.png"
+                          width="100%"
+                          height="100%"
+                          alt=""
+                        />
+                      </section>
+                      <div class="card-body">
+                        <h2
+                          style="font-weight: 600 !important"
+                          class="card-title"
+                        >
+                          Vehicle Insurance
+                        </h2>
+                        <p class="card-text">
+                          Be safe with vehicle insurance while driving
+                        </p>
+                      </div>
+                    </div>
+                  </section>
+                  <section class="flexing_dataon">
+                    <div class="card-body">
+                      <section class="big_text">
+                        <img
+                          src="main/parking-insurance.png"
+                          width="100%"
+                          height="100%"
+                          alt=""
+                        />
+                      </section>
+                      <div class="card-body">
+                        <h2
+                          style="font-weight: 600 !important"
+                          class="card-title"
+                        >
+                          Parking Insurance
+                        </h2>
+                        <p class="card-text">
+                          Vehicle Towed? Now find your vehicle location
+                        </p>
+                      </div>
+                    </div>
+                  </section>
+                  <section class="flexing_dataon">
+                    <div class="card-body">
+                      <section class="big_text">
+                        <img
+                          src="icon/d5.png"
+                          width="100%"
+                          height="100%"
+                          alt=""
+                        />
+                      </section>
+                      <div class="card-body">
+                        <h2
+                          style="font-weight: 600 !important"
+                          class="card-title"
+                        >
+                          E-Parking Challan for Wrong Parking
+                        </h2>
+                        <p class="card-text">
+                          For the First time, Report a vehicle directly to the
+                          RTO for wrong parking
+                        </p>
+                      </div>
+                    </div>
+                  </section>
+                  <section class="flexing_dataon">
+                    <div class="card-body">
+                      <section class="big_text">
+                        <img
+                          src="main/roadside-assistance.png"
+                          width="100%"
+                          height="100%"
+                          alt=""
+                        />
+                      </section>
+                      <div class="card-body">
+                        <h2
+                          style="font-weight: 600 !important"
+                          class="card-title"
+                        >
+                          Roadside Assistance
+                        </h2>
+                        <p class="card-text">
+                          Vehicle Towed? Now find your vehicle location
+                        </p>
+                      </div>
+                    </div>
+                  </section>
+                </section>
+              </section>
+            </section>
+          </section>
+          <!---------------------->
+        </section>
+      </section>
+    </section>
+
+    <!-------------------number data start-->
+    <section class="container-fluid my-4">
+      <section class="row padding_container text-center">
+        <section class="col">
+          <span
+            style="
+              font-size: 35px !important;
+              font-weight: 600 !important;
+              padding: 2vh 0% !important;
+            "
+          >
+            Achievements & Facts</span
+          ><br /><br />
+          <section class="container my-1">
+            <div class="row text-center number_data_bold">
+              <div class="col-xl-2 col-lg-3 col-md-6 col-sm-12">
+                <div class="card-body">
+                  <section class="padding_image">
+                    <section class="counter">
+                      <div class="employees">
+                        <section class="ing_1"></section>
+                        <br />
+                        <p
+                          class="counter-count"
+                          style="
+                            font-weight: 700 !important;
+                            font-size: 28px !important;
+                          "
+                        >
+                          45
+                        </p>
+                      </div>
+                    </section>
+                  </section>
+                  <div class="card-body">
+                    <p
+                      style="
+                        font-weight: 600 !important;
+                        font-size: 22px !important;
+                      "
+                      class="card-text"
+                    >
+                      Registered Vehicle Owners
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-2 col-lg-3 col-md-6 col-sm-12">
+                <div class="card-body">
+                  <section class="padding_image">
+                    <section class="counter">
+                      <div class="employees">
+                        <section class="ing_2"></section>
+                        <br />
+                        <p
+                          class="counter-count"
+                          style="
+                            font-weight: 700 !important;
+                            font-size: 28px !important;
+                          "
+                        >
+                          62
+                        </p>
+                      </div>
+                    </section>
+                  </section>
+                  <div class="card-body">
+                    <p
+                      style="
+                        font-weight: 600 !important;
+                        font-size: 22px !important;
+                      "
+                      class="card-text"
+                    >
+                      Registered Parking Space
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-2 col-lg-3 col-md-6 col-sm-12">
+                <div class="card-body">
+                  <section class="padding_image">
+                    <section class="counter">
+                      <div class="customer">
+                        <section class="ing_3"></section>
+                        <br />
+                        <p
+                          class="counter-count"
+                          style="
+                            font-weight: 700 !important;
+                            font-size: 28px !important;
+                          "
+                        >
+                          93
+                        </p>
+                      </div>
+                    </section>
+                  </section>
+                  <div class="card-body">
+                    <p
+                      style="
+                        font-weight: 600 !important;
+                        font-size: 22px !important;
+                      "
+                      class="card-text"
+                    >
+                      Vehicle Reported for Wrong Parking
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-2 col-lg-3 col-md-6 col-sm-12">
+                <div class="card-body">
+                  <section class="padding_image">
+                    <section class="counter">
+                      <div class="design">
+                        <section class="ing_4"></section>
+                        <br />
+                        <p
+                          class="counter-count"
+                          style="
+                            font-weight: 700 !important;
+                            font-size: 28px !important;
+                          "
+                        >
+                          72
+                        </p>
+                      </div>
+                    </section>
+                  </section>
+                  <div class="card-body">
+                    <p
+                      style="
+                        font-weight: 600 !important;
+                        font-size: 22px !important;
+                      "
+                      class="card-text"
+                    >
+                      Helped the Community!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-2 col-lg-3 col-md-6 col-sm-12">
+                <div class="card-body">
+                  <section class="padding_image">
+                    <section class="counter">
+                      <div class="order">
+                        <section class="ing_5"></section>
+                        <br />
+                        <p
+                          class="counter-count"
+                          style="
+                            font-weight: 700 !important;
+                            font-size: 28px !important;
+                          "
+                        >
+                          46
+                        </p>
+                      </div>
+                    </section>
+                  </section>
+                  <div class="card-body">
+                    <p
+                      style="
+                        font-weight: 600 !important;
+                        font-size: 22px !important;
+                      "
+                      class="card-text"
+                    >
+                      Vehicle Sold
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-2 col-lg-3 col-md-6 col-sm-12">
+                <div class="card-body">
+                  <section class="padding_image">
+                    <section class="counter">
+                      <div class="order">
+                        <section class="ing_6"></section>
+                        <br />
+                        <p
+                          class="counter-count"
+                          style="
+                            font-weight: 700 !important;
+                            font-size: 28px !important;
+                          "
+                        >
+                          104
+                        </p>
+                      </div>
+                    </section>
+                  </section>
+                  <div class="card-body">
+                    <p
+                      style="
+                        font-weight: 600 !important;
+                        font-size: 22px !important;
+                      "
+                      class="card-text"
+                    >
+                      Happy Owners
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+      </section>
+    </section>
+    <!----------------------------testimonial start-->
+    <section class="container-fluid bg_yellow text-center pt-5 main_testimonial_back_container_button">
+      <span style="font-size: 35px !important; font-weight: 600 !important"
+        >Customer Reviews & Testimonials
+      </span>
+      <section class="row">
+        <section class="col">
+          <section class="main_carousel">
+            <section
+              class="carousel main_testimonial_container text-center"
+              data-flickity='{"wrapAround":true,"autoPlay":true, "pageDots":false}'
+            >
+              <section class="carousel-cell">
+                <div class="card testimonial_height pt-5">
+                  <section class="testimonial_logo">
+                    <img
+                      src="images/a1.jpg"
+                      width="100%"
+                      height="100%"
+                      alt=""
+                    />
+                  </section>
+                  <div class="card-body">
+                    <p class="card-text">
+                      "Sample quote. Lorem ipsum dolor sit amet, consectetur
+                      adipiscing elit nullam nunc"
+                    </p>
+                    <h4>Nill Smith</h4>
+                    <h6 class="card-title">Financial Director</h6>
+                    1
+                  </div>
+                </div>
+              </section>
+              <section class="carousel-cell margin_top_card">
+                <div class="card testimonial_height pt-5">
+                  <section class="testimonial_logo">
+                    <img
+                      src="images/a2.jpg"
+                      width="100%"
+                      height="100%"
+                      alt=""
+                    />
+                  </section>
+                  <div class="card-body">
+                    <p class="card-text">
+                      "Sample quote. Lorem ipsum dolor sit amet, consectetur
+                      adipiscing elit nullam nunc"
+                    </p>
+                    <h4>Merry Kinnly</h4>
+                    <h6 class="card-title">Chief Accountant</h6>
+                    2
+                  </div>
+                </div>
+              </section>
+              <section class="carousel-cell">
+                <div class="card testimonial_height pt-5">
+                  <section class="testimonial_logo">
+                    <img
+                      src="images/a3.jpg"
+                      width="100%"
+                      height="100%"
+                      alt=""
+                    />
+                  </section>
+                  <div class="card-body">
+                    <p class="card-text">
+                      "Sample quote. Lorem ipsum dolor sit amet, consectetur
+                      adipiscing elit nullam nunc"
+                    </p>
+                    <h4>Frank Kinney</h4>
+                    <h6 class="card-title">Sales Manager</h6>
+                    3
+                  </div>
+                </div>
+              </section>
+              <section class="carousel-cell margin_top_card">
+                <div class="card testimonial_height pt-5">
+                  <section class="testimonial_logo">
+                    <img
+                      src="images/a1.jpg"
+                      width="100%"
+                      height="100%"
+                      alt=""
+                    />
+                  </section>
+                  <div class="card-body">
+                    <p class="card-text">
+                      "Sample quote. Lorem ipsum dolor sit amet, consectetur
+                      adipiscing elit nullam nunc"
+                    </p>
+                    <h4>Nill Smith</h4>
+                    <h6 class="card-title">Financial Director</h6>
+                    4
+                  </div>
+                </div>
+              </section>
+              <section class="carousel-cell">
+                <div class="card testimonial_height pt-5">
+                  <section class="testimonial_logo">
+                    <img
+                      src="images/a2.jpg"
+                      width="100%"
+                      height="100%"
+                      alt=""
+                    />
+                  </section>
+                  <div class="card-body">
+                    <p class="card-text">
+                      "Sample quote. Lorem ipsum dolor sit amet, consectetur
+                      adipiscing elit nullam nunc"
+                    </p>
+                    <h4>Merry Kinnly</h4>
+                    <h6 class="card-title">Chief Accountant</h6>
+                    5
+                  </div>
+                </div>
+              </section>
+              <section class="carousel-cell margin_top_card">
+                <div class="card testimonial_height pt-5">
+                  <section class="testimonial_logo">
+                    <img
+                      src="images/a3.jpg"
+                      width="100%"
+                      height="100%"
+                      alt=""
+                    />
+                  </section>
+                  <div class="card-body">
+                    <p class="card-text">
+                      "Sample quote. Lorem ipsum dolor sit amet, consectetur
+                      adipiscing elit nullam nunc"
+                    </p>
+                    <h4>Frank Kinney</h4>
+                    <h6 class="card-title">Sales Manager</h6>
+                    6
+                  </div>
+                </div>
+              </section>
+              <section class="carousel-cell">
+                <div class="card testimonial_height pt-5">
+                  <section class="testimonial_logo">
+                    <img
+                      src="images/a1.jpg"
+                      width="100%"
+                      height="100%"
+                      alt=""
+                    />
+                  </section>
+                  <div class="card-body">
+                    <p class="card-text">
+                      "Sample quote. Lorem ipsum dolor sit amet, consectetur
+                      adipiscing elit nullam nunc"
+                    </p>
+                    <h4>Nill Smith</h4>
+                    <h6 class="card-title">Financial Director</h6>
+                    7
+                  </div>
+                </div>
+              </section>
+              <section class="carousel-cell margin_top_card">
+                <div class="card testimonial_height pt-5">
+                  <section class="testimonial_logo">
+                    <img
+                      src="images/a2.jpg"
+                      width="100%"
+                      height="100%"
+                      alt=""
+                    />
+                  </section>
+                  <div class="card-body">
+                    <p class="card-text">
+                      "Sample quote. Lorem ipsum dolor sit amet, consectetur
+                      adipiscing elit nullam nunc"
+                    </p>
+                    <h4>Merry Kinnly</h4>
+                    <h6 class="card-title">Chief Accountant</h6>
+                    8
+                  </div>
+                </div>
+              </section>
+            </section>
+          </section>
+        </section>
+      </section>
+    </section>
+    <!----------section 9 strat-->
+    <section class="container my-5 text-center">
+      <span style="font-size: 35px !important; font-weight: 600 !important"
+        >Frequently Asked Questions</span
+      >
+      <h1>Having Trouble?</h1>
+      <section class="row my-5">
+        <section class="col-xl-6 col-lg-6 col-md-12 col-sm-12 image_padding">
+          <a href="driver.html">
+            <div
+              class="card mb-3 mx-auto mian_pointer"
+              style="max-width: 540px"
+            >
+              <div class="row no-gutters">
+                <div class="col-md-4 my-auto">
+                  <img src="main/parking1.png" width="100%" alt="..." />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Parking Owners</h5>
+                    <p class="card-text">
+                      Get help with finding spaces, how to use our platform,
+                      where what do you do in case of issues and more
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </section>
+        <section class="col-xl-6 col-lg-6 col-md-12 col-sm-12 image_padding">
+          <a href="owner.html">
+            <div
+              class="card mb-3 mx-auto mian_pointer"
+              style="max-width: 540px"
+            >
+              <div class="row no-gutters">
+                <div class="col-md-4 my-auto">
+                  <img src="main/parking2.png" alt="..." />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Vehicle Owners</h5>
+                    <p class="card-text">
+                      get help with setting up and managing your listing see
+                      tips to make the most of your space and more
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </section>
+      </section>
+    </section>
+    <!-----------------add banner-->
+    <section class="container">
+      <section class="row add_banner">
+        <section class="col">
+          <section class="container-fluid">
+            <section class="row">
+              <section class="col-xl-12 col-lg-12 col-md-12 col-ms-12">
+                <section
+                  class="carousel my-5 carousel_container_padding"
+                  data-flickity='{"wrapAround":true,"autoPlay":true, "pageDots":false, "prevNextButtons" : false}'
+                >
+                  <section class="carousel-cell my-auto bg_yellow">
+                    <img src="images/main_taxi.jpeg" width="100%" alt="" />
+                  </section>
+                  <section class="carousel-cell bg_yellow">
+                    <img src="images/main_taxi.jpeg" width="100%" alt="" />
+                  </section>
+                  <section class="carousel-cell bg_yellow">
+                    <img src="images/main_taxi.jpeg" width="100%" alt="" />
+                  </section>
+                  <section class="carousel-cell bg_yellow">
+                    <img src="images/main_taxi.jpeg" width="100%" alt="" />
+                  </section>
+                </section>
+              </section>
+            </section>
+          </section>
+        </section>
+      </section>
+    </section>
+
+    <!--------------------------->
+    <section class="inputing_sizing">
+      <!--------------------JOIN OUR MAIL LIST FOR EXCLUSIVE start-->
+      <section class="container-fluid bg_yellow">
+        <section class="row text-center">
+          <section class="col">
+            <section class="container">
+              <section class="row padding_container join_exclusive_container">
+                <section class="col my-auto">
+                  <h2>JOIN OUR MAIL LIST FOR EXCLUSIVE</h2>
+                  <h1>Offers & Crazy Deals</h1>
+                  <form action="" method="POST">
+                    <p>
+                      <input
+                        type="text"
+                        name="fname"
+                        placeholder="Enter Your Name"
+                        id=""
+                      />&nbsp;&nbsp;<input
+                        type="email"
+                        name="email"
+                        placeholder="Enter Your Email"
+                        id=""
+                      />&nbsp;&nbsp;<br /><br />
+                      <button
+                        type="button"
+                        class="btn btn-dark"
+                        style="font-weight: 600 !important"
+                      >
+                        Submit
+                      </button>
+                    </p>
+                  </form>
+                </section>
+              </section>
+            </section>
+          </section>
+        </section>
+      </section>
+
+      <!----------------------lower footer start-->
+      <section class="container-fluid margin_footer_start">
+        <section class="row">
+          <section class="col">
+            <section class="container-fluid text-white">
+              <section class="row medium_footer_form_container">
+                <section
+                  class="
+                    col-xl-6 col-lg-6 col-md-12 col-sm-12
+                    padding_container
+                  "
+                >
+                  <h1>GET IN TOUCH</h1>
+                  <p>
+                    We can ensure reliability, low cost fares and most
+                    important, with safety and comfort in mind.
+                  </p>
+                  <p>
+                    Etiam sit amet convallis erat – class aptent taciti sociosqu
+                    ad litora torquent per conubia! Maecenas gravida lacus.
+                    Lorem etiam sit amet convallis erat.
+                  </p>
+                  <ul class="navigation_footer">
+                    <li>
+                      <a href="https://www.facebook.com/ParkingMudde"
+                        ><img
+                          src="social links/facebook.png"
+                          height="40px"
+                          alt=""
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="https://twitter.com/MuddeParking"
+                        ><img
+                          src="social links/twitter.png"
+                          height="40px"
+                          alt=""
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="https://www.instagram.com/parkingmudde/"
+                        ><img
+                          src="social links/instagram.png"
+                          height="40px"
+                          alt=""
+                      /></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.linkedin.com/in/parking-mudde-438601217/"
+                        ><img
+                          src="social links/linkedin.png"
+                          height="40px"
+                          alt=""
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="hello@parkingmudde.com"
+                        ><img src="social links/email.png" height="40px" alt=""
+                      /></a>
+                    </li>
+                  </ul>
+                </section>
+                <section
+                  class="
+                    col-xl-6 col-lg-6 col-md-12 col-sm-12
+                    text-center
+                    bg_yellow
+                    padding_container
+                    medium_footer_form_container_second
+                  "
+                >
+                  <form action="" method="POST">
+                    <p class="left_text">Email</p>
+                    <p>
+                      <input
+                        type="email"
+                        name="email"
+                        placeholder="Enter Your Email"
+                        id=""
+                      />
+                    </p>
+                    <p class="left_text">Name</p>
+                    <p>
+                      <input
+                        type="text"
+                        name="fname"
+                        placeholder="Enter Your Name"
+                        id=""
+                      />
+                    </p>
+                    <p class="left_text">Message</p>
+                    <p id="textareabold">
+                      <textarea
+                        name="message"
+                        placeholder="Enter Your Message"
+                        id=""
+                        cols="30"
+                        rows="10"
+                      ></textarea>
+                    </p>
+                    <p>
+                      <button
+                        type="button"
+                        class="btn btn-dark"
+                        style="font-weight: 600 !important"
+                      >
+                        Submit
+                      </button>
+                    </p>
+                  </form>
+                </section>
+              </section>
+            </section>
+          </section>
+        </section>
+      </section>
+      <!---------------------footer start-->
+    </section>
+    <!--------------------------->
+    <section class="container-fluid lower_footer">
+      <section class="row">
+        <section class="col">
+          <section class="container">
+            <section class="row lower_footer_height text-center">
+              <section class="col my-auto" style="color: white">
+                Sample text. Click to select the text box. Click again or double
+                click to start editing the text. <br />
+                Website Templates created with Website Builder Software. <br />
+                all rights reserved 2021
+              </section>
+            </section>
+          </section>
+        </section>
+      </section>
+    </section>
+    <!-- Optional JavaScript; choose one of the two! -->
+    <script>
+      var preloader = document.getElementById("loading_screen");
+      function myFunction() {
+        preloader.style.display = "none";
+      }
+    </script>
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

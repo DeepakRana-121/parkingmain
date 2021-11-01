@@ -1,0 +1,15 @@
+i {
+  color: black !important;
+}
+* {
+  font-family: "Nunito", sans-serif !important;
+}
+.bg_yellow {
+  background-color: #fcd708 !important
+;
+}
+button {
+  background-color: black !important;
+  font-weight: 600 !important;
+  color: white !important;
+}

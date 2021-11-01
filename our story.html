@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/f665390b3c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="jQuery.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#mainbutton_right_side").click(function () {
+          $(".navigation_start_here").slideToggle();
+          $("#main_iconic").toggle();
+        });
+        $(".hello1").hover(function () {
+          $(".car_image_container .right_to_left").css({
+            " animation-iteration-count ": 2,
+            "margin-left": "0px",
+            transition: "2s",
+          });
+        });
+        $(".hello2").hover(function () {
+          $(".car_image_container .left_to_right").css({
+            " animation-iteration-count ": 2,
+            "margin-left": "0px",
+            transition: "2s",
+          });
+        });
+        $(".counter-count").each(function () {
+          $(this)
+            .prop("Counter", 0)
+            .animate(
+              {
+                Counter: $(this).text(),
+              },
+              {
+                duration: 5000,
+                easing: "swing",
+                step: function (now) {
+                  $(this).text(Math.ceil(now));
+                },
+              }
+            );
+        });
+      });
+    </script>
+    <title>Our Story</title>
+    <link rel="stylesheet" href="css/style4.css" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      a {
+        text-decoration: none !important;
+      }
+
+      .main_container .row {
+        min-height: 50vh;
+        background-size: cover;
+      }
+
+      .main_container .row .col {
+        min-height: 50vh;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+          rgba(0, 0, 0, 0.23) 0px 3px 6px;
+      }
+
+      .main_container {
+        background-image: url(images/white\ back.jpg);
+        position: relative;
+      }
+
+      .hovering_div {
+        height: 100%;
+        background-color: rgba(187, 187, 187, 0);
+        position: absolute;
+        top: 0px;
+        height: 100vh;
+        width: 100%;
+        left: 0px;
+        z-index: 100;
+      }
+
+      a {
+        text-decoration: none !important;
+      }
+
+      body p {
+        font-size: 20px;
+      }
+
+      .white_background {
+        background-image: url(images/xx-min.jpg);
+        background-repeat: no-repeat;
+        background-position: right top;
+        background-size: contain;
+        min-height: 80vh;
+      }
+
+      .minimum_height {
+        min-height: 80vh;
+      }
+
+      @media (max-width: 1366px) {
+        .margin_top_main_creative_container {
+          margin-top: 120px;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .white_background {
+          background-image: none;
+          background-image: url(images/white\ back.jpg);
+        }
+
+        #minimum_text {
+          font-size: 40px;
+        }
+
+        #main_padding_for_para_hello {
+          padding: 0%;
+        }
+      }
+
+      .football_container {
+        min-height: 100vh;
+        background-image: url(images/football.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        font-weight: 700;
+        padding-left: 10%;
+      }
+
+      a {
+        text-decoration: none !important;
+      }
+
+      body {
+        background-image: url(images/white\ back.jpg);
+        font-weight: 600;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      a,
+      span,
+      input,
+      textarea,
+      p {
+        font-weight: 400 !important;
+        font-family: "Nunito", sans-serif !important;
+      }
+
+      h1 {
+        font-size: 28px !important;
+        font: bold !important;
+      }
+
+      h2 {
+        font-size: 20px !important;
+      }
+
+      p {
+        font-size: 16px !important;
+      }
+
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-size: 16px !important;
+      }
+
+      .bakground_color_our_story {
+        background-color: #0fedc5;
+      }
+
+      .rock_box {
+        position: relative;
+      }
+
+      .colored_text_counting {
+        font-size: 100px !important;
+        position: absolute;
+        z-index: -10;
+        top: -80px;
+        color: #0fedc5;
+        font-weight: 900 !important;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.623);
+      }
+
+      .main_padding_top_container_team {
+        margin-top: 200px;
+      }
+
+      .hellocarousel {
+        min-height: 40vh;
+        width: 80%;
+        margin: auto;
+        margin-top: -100px;
+      }
+
+      .team_calausel_start .carousel-cell {
+        width: 90%;
+        min-height: max-content;
+        margin-right: 30px;
+        counter-increment: carousel-cell;
+        text-align: center;
+        overflow: hidden;
+      }
+
+      @media (max-width: 768px) {
+        #maining_textting_fun {
+          font-size: 40px !important;
+          top: 00px !important;
+          left: 4% !important;
+        }
+
+        #second_heading_styling_creative {
+          top: 40px !important;
+          padding: 0px 20px !important;
+        }
+
+        #right_padding_image_creative {
+          right: 0px !important;
+        }
+
+        #creative_text_written {
+          font-size: 50px !important;
+        }
+
+        #marrin_top_texting {
+          margin-top: -30px;
+        }
+      }
+      body {
+        position: relative;
+      }
+      #hello_come_top {
+        bottom: -40px;
+      }
+      #hello_come_top:hover {
+        bottom: 0px;
+      }
+    </style>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style6.css" />
+    <link rel="stylesheet" href="css/blackicon.css" />
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+  </head>
+
+  <body>
+    <section
+      class="whats_app_icon"
+      style="
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        z-index: 10000000000000000000000000;
+      "
+    >
+      <a href="#">
+        <img src="icon/whatsapp.png" height="60px" width="60px" alt=""
+      /></a>
+    </section>
+    <!----------------whats app-->
+    <section
+      class="go_to_top"
+      id="hello_come_top"
+      style="position: fixed; right: 40px; z-index: 100000000000000000000000"
+    >
+      <a href="#">
+        <img src="images/iconicon.png" height="90px" width="70px" alt=""
+      /></a>
+    </section>
+    <!------------------------go to top icon-->
+    <section class="container-fluid">
+      <section class="container-fluid">
+        <section
+          class="row parent_navigation_start"
+          style="background-color: black"
+        >
+          <section class="col">
+            <section
+              class="navigation_start_here"
+              style="font-size: 18px !important"
+            >
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="our story.html">Our Story</a></li>
+                <li><a href="news and blogs.html">News & Blogs</a></li>
+                <li>
+                  <a href="join our hand.html"
+                    >Join our hands - Partner with us</a
+                  >
+                </li>
+                <li><a href="help center.html">Help & Support</a></li>
+                <li><a href="register.html">Register With Us!</a></li>
+                <li><a href="login.html">Login</a></li>
+              </ul>
+            </section>
+            <img
+              src="images/mainmain.png"
+              height="40px"
+              width="40px"
+              alt=""
+              id="mainbutton_right_side"
+            />
+          </section>
+        </section>
+      </section>
+      <section class="row text-center">
+        <section class="col">
+          <br />
+          <img
+            id="main_iconic"
+            src="images/Parking Mudde final.png"
+            height="60px"
+            alt=""
+          />
+        </section>
+      </section>
+    </section>
+    <!------------------------creative start-->
+    <section class="container">
+      <section class="row" style="min-height: 50vh">
+        <section class="col" style="position: relative">
+          <span
+            id="maining_textting_fun"
+            style="
+              position: absolute;
+              top: 100px;
+              left: 10%;
+              font-size: 150px;
+              color: #0fedc5;
+              font-weight: 900 !important;
+            "
+            >WE ARE</span
+          >
+          <span
+            style="
+              position: absolute;
+              right: 0px;
+              padding: 0% 0% 0% 50%;
+              top: 220px;
+              line-height: 2;
+            "
+            id="second_heading_styling_creative"
+          >
+            <h2 style="font-size: 24px !important; font-weight: 600 !important">
+              Hello, we are DesignStudio! We make a meaningful difference to the
+              world’s most loved brands.
+            </h2>
+
+            <br />
+            <p
+              id="marrin_top_texting"
+              style="
+                font: bold !important;
+                font-size: 18px !important;
+                line-height: 1.2;
+              "
+            >
+              We begin with ‘we know nothing’, and immerse ourselves in
+              everything you do. We want to move in. Be part of your team.
+            </p>
+          </span>
+        </section>
+      </section>
+    </section>
+    <section class="container margin_top_main_creative_container">
+      <section
+        class="row text-right"
+        style="min-height: 600px; margin-top: 40px"
+      >
+        <section class="col" style="position: relative">
+          <img
+            src="images/work1.jpeg"
+            style="position: absolute; right: 15%"
+            height="600px"
+            id="right_padding_image_creative"
+            alt=""
+          />
+          <span
+            id="creative_text_written"
+            style="
+              position: absolute;
+              top: 10px;
+              right: 0px;
+              font-size: 100px;
+              font-weight: 900;
+              color: black;
+              text-shadow: 1px 1px 1px black;
+              border-right: 20px solid skyblue;
+              border-bottom: 20px solid skyblue;
+            "
+            >Creative</span
+          >
+        </section>
+      </section>
+    </section>
+    <!------------------------creative end-->
+    <!-----------------our story start -->
+    <section class="container my-5">
+      <section class="row our_story_section_1">
+        <section class="col my-auto">
+          <h1 style="font-size: 60px !important">about us</h1>
+          <p style="font-size: 30px !important" class="text-primary h5">
+            He an thing rapid these after going drawn or. Timed she his law the
+            spoil round defer. In surprise concerns informed betrayed he
+            learning is ye. Ignorant formerly so ye blessing.
+          </p>
+          <p style="font-size: 22px !important" class="my-3">
+            He as spoke avoid given downs money on we. Of properly carriage
+            shutters ye as wandered up repeated moreover. Article evident
+            arrived express highest men did boy. Mistress sensible entirely am
+            so. Quick can manor smart money hopes worth too. Comfort produce
+            husband boy her had hearing. Law others theirs passed but wishes.
+            You day real less till dear read. Considered use dispatched
+            melancholy sympathize discretion led.
+          </p>
+        </section>
+      </section>
+    </section>
+
+    <section class="container-fluid">
+      <section class="row">
+        <section class="col">
+          <section class="container-fluid my-4">
+            <section class="row main_work_container_start">
+              <section
+                class="col-xl-2 col-lg-2 background_image_work"
+              ></section>
+              <section
+                class="
+                  col-xl-6 col-lg-6 col-md-12
+                  padding_text_center_container
+                "
+              >
+                <p
+                  style="
+                    font-size: 35px !important;
+                    line-height: 1.5;
+                    font-weight: 600 !important;
+                  "
+                  class="h1 boldtexting"
+                >
+                  OUR WORK INCLUDES A PORTFOLIO OF INITIATIVES THAT WE HAVE
+                  DEVELOPED WITH OUR PARTNERS AND OVERSEE DIRECTLY
+                </p>
+                <section class="flexing_work_container">
+                  <section class="work_box">
+                    <h3
+                      style="
+                        font-size: 25px !important;
+                        font-weight: 600 !important;
+                      "
+                    >
+                      SERVICE DESIGN
+                    </h3>
+                    <br />
+                    <p style="font-size: 18px !important">
+                      Our goal for service design is simple: we aim to make
+                      public services as effective and accessible as possible
+                      for our clients. For a program, product, policy or service
+                      to be effective, many factors come into play
+                    </p>
+                    <a href="index.html">
+                      <img src="icon/aa.png" height="30px" width="30px" alt=""
+                    /></a>
+                  </section>
+                  <section class="work_box">
+                    <h3
+                      style="
+                        font-size: 25px !important;
+                        font-weight: 600 !important;
+                      "
+                    >
+                      DIGITAL WORKS
+                    </h3>
+                    <br />
+                    <p style="font-size: 18px !important">
+                      The digital product team conducts user research, creates
+                      user experiences, and works closely with internal and
+                      outside technology teams to prototype, develop, and set
+                      ongoing strategy.
+                    </p>
+                    <a href="index.html">
+                      <img src="icon/aa.png" height="30px" width="30px" alt=""
+                    /></a>
+                  </section>
+                </section>
+              </section>
+              <section
+                class="col-xl-4 col-lg-4 col-md-12 bac_image_2"
+              ></section>
+            </section>
+          </section>
+          <br /><br />
+          <section class="container my-5">
+            <h1 style="font-size: 35px !important">
+              WE HELP FIND WHAT MAKES YOUR AMAZING
+            </h1>
+            <p>
+              We call this your meaningful difference and it’s the powerful idea
+              behind your brand.
+            </p>
+            <section class="row" style="padding-top: 10vh">
+              <section
+                class="col-xl-4 col-lg-4 col-md-6 col-sm-12 bac_image_3"
+              ></section>
+              <section
+                class="col-xl-4 col-lg-4 col-md-6 col-sm-12 data_differenciate"
+              >
+                <p style="font-size: 25px !important" class="padding_top_tetxt">
+                  OUR VISION
+                </p>
+                <p>
+                  We believe that great design and effective communication are
+                  key ingredients for improving our lives and the world around
+                  us. It drives everything you do and say. It’s what separates
+                  you from everyone else and it’s why people want to work with –
+                  and for – you.
+                </p>
+                <p style="font-size: 25px !important" class="padding_top_tetxt">
+                  OUR MISSION
+                </p>
+                <p>
+                  We exist to serve organizations that are making a positive
+                  social impact. We bring teams of creative and technical talent
+                  together to help our clients achieve their mission.
+                </p>
+              </section>
+              <section
+                class="
+                  col-xl-4 col-lg-4 col-md-12 col-sm-12
+                  display_flexning_here_for_images
+                "
+              >
+                <img src="images/work4.jpeg" width="100%" alt="" /><img
+                  src="images/work5.jpeg"
+                  width="100%"
+                  alt=""
+                />
+              </section>
+            </section>
+          </section>
+          <section class="container">
+            <section class="row">
+              <section class="col">
+                <p
+                  style="font-size: 28px !important; padding-top: 5vh"
+                  class="display-4"
+                >
+                  HOW WE WORK
+                </p>
+                <p
+                  id="main_padding_for_para_hello"
+                  style="padding: 0% 40% 0% 0%"
+                >
+                  We are a full-service digital creative agency with brick and
+                  mortar offices and plenty of in-house talent. This year we
+                  launched the DesignStudio Creative Network and now also offer
+                  email and portfolio hosting to freelance creatives all around
+                  the world.
+                </p>
+                <section class="flexing_work_how">
+                  <section class="flexing_work_how_box">
+                    <img src="images/work6.jpeg" alt="" />
+                  </section>
+                  <section class="flexing_work_how_box">
+                    <img src="images/work7.jpeg" alt="" />
+                  </section>
+                  <section class="flexing_work_how_box">
+                    <img src="images/work8.jpeg" alt="" />
+                  </section>
+                </section>
+                <section
+                  class="container-fluid second_image_gallery_container my-5"
+                >
+                  <section class="row">
+                    <section class="col-xl-6 col-lg-6 col-md-12">
+                      <img src="images/work9.jpeg" alt="" /><br /><br /><img
+                        src="images/work10.jpeg"
+                        alt=""
+                      />
+                    </section>
+                    <section class="col bac_image_11"></section>
+                  </section>
+                </section>
+              </section>
+            </section>
+          </section>
+          <section class="container-fluid">
+            <section class="row main_creative_network">
+              <section
+                class="col-xl-4 col-lg-4 col-md-6 col-sm-12 bac_image_12"
+              ></section>
+              <section
+                class="
+                  col-xl-7 col-lg-7 col-md-6 col-sm-12
+                  padding_top_text_for_network
+                "
+              >
+                <p style="font-size: 28px !important" class="display-4">
+                  JOIN OUR CREATIVE NETWORK
+                </p>
+                <p style="font-size: 20px !important">
+                  READY TO TAKE ON ANY CHALLENGE.
+                </p>
+                <p style="font-size: 18px !important">
+                  This is a premium network offered exclusively to creative
+                  freelancers who want to build a professional personal brand.
+                  Our goal is to help you to get exposure and grow your
+                  freelance career. We are a reliable and affordable digital
+                  creative agency. We have approximately 20-25 in-house
+                  employees along with our very own fully vetted creative
+                  freelancer network. We like to say that we have "talent on
+                  tap" and are ready to take on any challenge.
+                </p>
+                <button type="button" class="btn btn-dark">
+                  <a
+                    style="color: white; font-weight: 600 !important"
+                    href="register.html"
+                  >
+                    Join Now</a
+                  >
+                </button>
+              </section>
+              <section class="col-xl-1 col-lg-1 bac_image_13"></section>
+            </section>
+          </section>
+          <section class="container my-5">
+            <section class="row main_three_ways_container">
+              <section class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                <section class="container-fluid">
+                  <section class="row">
+                    <section class="col-xl-6 col-lg-6 col-md-12">
+                      <section class="rock_box">
+                        <h1>ABOUT THREE WAYS WE ROCK</h1>
+                      </section>
+                      <section class="rock_box">
+                        <span class="colored_text_counting"> 1</span>
+                        <p>
+                          The Passion Shows - We believe in enjoying the ride as
+                          much as the destination and breed a company culture
+                          that favors the bold. We hope it shows in our work.
+                        </p>
+                      </section>
+                    </section>
+                    <section class="col-xl-6 col-lg-6 col-md-12">
+                      <section class="rock_box">
+                        <span class="colored_text_counting"> 2</span>
+                        <p>
+                          Transparent Rates and Simple Billing - Our rates are
+                          surprisingly reasonable and our billing practices set
+                          a new standard for transparency in our industry.
+                        </p>
+                      </section>
+                      <section class="rock_box">
+                        <span class="colored_text_counting"> 3</span>
+                        <p>
+                          We Answer Our Phones -We aren’t the agency hiding
+                          behind emails. We partner with our clients and that
+                          means even answering calls on nights and weekends
+                          sometimes.
+                        </p>
+                      </section>
+                    </section>
+                  </section>
+                </section>
+              </section>
+              <section
+                class="col-xl-6 col-lg-6 col-md-12 col-sm-12 bac_image_14"
+              ></section>
+            </section>
+          </section>
+        </section>
+      </section>
+    </section>
+
+    <!----------------------meet the team start-->
+    <section class="container">
+      <span style="font-size: 100px; line-height: 1">Meet the team</span>
+      <p style="padding-right: 25%">
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+        ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur.
+      </p>
+      <section class="row">
+        <section class="col"></section>
+      </section>
+    </section>
+    <section class="container-fluid main_padding_top_container_team">
+      <section class="row">
+        <section
+          class="
+            col-xl-8 col-lg-8 col-md-12 col-sm-12
+            bg_yellow
+            team_calausel_start
+          "
+          style="min-height: 40vh"
+        >
+          <section
+            class="carousel hellocarousel"
+            data-flickity='{"wrapAround":true,"autoPlay":true, "pageDots":false, "prevNextButtons" : false}'
+          >
+            <section class="carousel-cell">
+              <section class="container-fluid">
+                <section class="row">
+                  <section class="col">
+                    <img
+                      src="images/team1.jpg"
+                      width="
+                    100%"
+                      alt=""
+                    />
+                    <h2>Add Name</h2>
+                    <p>Designation</p>
+                  </section>
+                  <section class="col">
+                    <img src="images/team2.jpg" width="100%" alt="" />
+                    <h2>Add Name</h2>
+                    <p>Designation</p>
+                  </section>
+                </section>
+              </section>
+            </section>
+            <section class="carousel-cell">
+              <section class="container-fluid">
+                <section class="row">
+                  <section class="col">
+                    <img
+                      src="images/team1.jpg"
+                      width="
+                    100%"
+                      alt=""
+                    />
+                    <h2>Add Name</h2>
+                    <p>Designation</p>
+                  </section>
+                  <section class="col">
+                    <img src="images/team2.jpg" width="100%" alt="" />
+                    <h2>Add Name</h2>
+                    <p>Designation</p>
+                  </section>
+                </section>
+              </section>
+            </section>
+            <section class="carousel-cell">
+              <section class="container-fluid">
+                <section class="row">
+                  <section class="col">
+                    <img
+                      src="images/team1.jpg"
+                      width="
+                    100%"
+                      alt=""
+                    />
+                    <h2>Add Name</h2>
+                    <p>Designation</p>
+                  </section>
+                  <section class="col">
+                    <img src="images/team2.jpg" width="100%" alt="" />
+                    <h2>Add Name</h2>
+                    <p>Designation</p>
+                  </section>
+                </section>
+              </section>
+            </section>
+            <section class="carousel-cell">
+              <section class="container-fluid">
+                <section class="row">
+                  <section class="col">
+                    <img
+                      src="images/team1.jpg"
+                      width="
+                    100%"
+                      alt=""
+                    />
+                    <h2>Add Name</h2>
+                    <p>Designation</p>
+                  </section>
+                  <section class="col">
+                    <img src="images/team2.jpg" width="100%" alt="" />
+                    <h2>Add Name</h2>
+                    <p>Designation</p>
+                  </section>
+                </section>
+              </section>
+            </section>
+          </section>
+        </section>
+      </section>
+    </section>
+    <!-----------------add banner-->
+    <section class="container">
+      <section class="row add_banner">
+        <section class="col">
+          <section class="container-fluid">
+            <section class="row">
+              <section class="col-xl-12 col-lg-12 col-md-12 col-ms-12">
+                <section
+                  class="carousel my-5 carousel_container_padding"
+                  data-flickity='{"wrapAround":true,"autoPlay":true, "pageDots":false, "prevNextButtons" : false}'
+                >
+                  <section class="carousel-cell my-auto bg_yellow">
+                    <img src="images/main_taxi.jpeg" width="100%" alt="" />
+                  </section>
+                  <section class="carousel-cell bg_yellow">
+                    <img src="images/main_taxi.jpeg" width="100%" alt="" />
+                  </section>
+                  <section class="carousel-cell bg_yellow">
+                    <img src="images/main_taxi.jpeg" width="100%" alt="" />
+                  </section>
+                  <section class="carousel-cell bg_yellow">
+                    <img src="images/main_taxi.jpeg" width="100%" alt="" />
+                  </section>
+                </section>
+              </section>
+            </section>
+          </section>
+        </section>
+      </section>
+    </section>
+
+    <!--------------------------->
+    <section class="inputing_sizing">
+      <!--------------------JOIN OUR MAIL LIST FOR EXCLUSIVE start-->
+      <section class="container-fluid bg_yellow">
+        <section class="row text-center">
+          <section class="col">
+            <section class="container">
+              <section class="row padding_container join_exclusive_container">
+                <section class="col my-auto">
+                  <h2>JOIN OUR MAIL LIST FOR EXCLUSIVE</h2>
+                  <h1>Offers & Crazy Deals</h1>
+                  <form action="" method="POST">
+                    <p>
+                      <input
+                        type="text"
+                        name="fname"
+                        placeholder="Enter Your Name"
+                        id=""
+                      />&nbsp;&nbsp;<input
+                        type="email"
+                        name="email"
+                        placeholder="Enter Your Email"
+                        id=""
+                      />&nbsp;&nbsp;<br /><br />
+                      <button
+                        type="button"
+                        class="btn btn-dark"
+                        style="font-weight: 600 !important"
+                      >
+                        Submit
+                      </button>
+                    </p>
+                  </form>
+                </section>
+              </section>
+            </section>
+          </section>
+        </section>
+      </section>
+
+      <!----------------------lower footer start-->
+      <section class="container-fluid margin_footer_start">
+        <section class="row">
+          <section class="col">
+            <section class="container-fluid text-white">
+              <section class="row medium_footer_form_container">
+                <section
+                  class="
+                    col-xl-6 col-lg-6 col-md-12 col-sm-12
+                    padding_container
+                  "
+                >
+                  <h1>GET IN TOUCH</h1>
+                  <p>
+                    We can ensure reliability, low cost fares and most
+                    important, with safety and comfort in mind.
+                  </p>
+                  <p>
+                    Etiam sit amet convallis erat – class aptent taciti sociosqu
+                    ad litora torquent per conubia! Maecenas gravida lacus.
+                    Lorem etiam sit amet convallis erat.
+                  </p>
+                  <ul class="navigation_footer">
+                    <li>
+                      <a href="https://www.facebook.com/ParkingMudde"
+                        ><img
+                          src="social links/facebook.png"
+                          height="40px"
+                          alt=""
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="https://twitter.com/MuddeParking"
+                        ><img
+                          src="social links/twitter.png"
+                          height="40px"
+                          alt=""
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="https://www.instagram.com/parkingmudde/"
+                        ><img
+                          src="social links/instagram.png"
+                          height="40px"
+                          alt=""
+                      /></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.linkedin.com/in/parking-mudde-438601217/"
+                        ><img
+                          src="social links/linkedin.png"
+                          height="40px"
+                          alt=""
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="hello@parkingmudde.com"
+                        ><img src="social links/email.png" height="40px" alt=""
+                      /></a>
+                    </li>
+                  </ul>
+                </section>
+                <section
+                  class="
+                    col-xl-6 col-lg-6 col-md-12 col-sm-12
+                    text-center
+                    bg_yellow
+                    padding_container
+                    medium_footer_form_container_second
+                  "
+                >
+                  <form action="" method="POST">
+                    <p class="left_text">Email</p>
+                    <p>
+                      <input
+                        type="email"
+                        name="email"
+                        placeholder="Enter Your Email"
+                        id=""
+                      />
+                    </p>
+                    <p class="left_text">Name</p>
+                    <p>
+                      <input
+                        type="text"
+                        name="fname"
+                        placeholder="Enter Your Name"
+                        id=""
+                      />
+                    </p>
+                    <p class="left_text">Message</p>
+                    <p id="textareabold">
+                      <textarea
+                        name="message"
+                        placeholder="Enter Your Message"
+                        id=""
+                        cols="30"
+                        rows="10"
+                      ></textarea>
+                    </p>
+                    <p>
+                      <button
+                        type="button"
+                        class="btn btn-dark"
+                        style="font-weight: 600 !important"
+                      >
+                        Submit
+                      </button>
+                    </p>
+                  </form>
+                </section>
+              </section>
+            </section>
+          </section>
+        </section>
+      </section>
+      <!---------------------footer start-->
+    </section>
+    <!--------------------------->
+    <section class="container-fluid lower_footer">
+      <section class="row">
+        <section class="col">
+          <section class="container">
+            <section class="row lower_footer_height text-center">
+              <section class="col my-auto" style="color: white">
+                Sample text. Click to select the text box. Click again or double
+                click to start editing the text. <br />
+                Website Templates created with Website Builder Software. <br />
+                all rights reserved 2021
+              </section>
+            </section>
+          </section>
+        </section>
+      </section>
+    </section>
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

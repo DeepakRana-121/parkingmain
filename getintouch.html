@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Get in touch</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    /><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <script
+      src="https://kit.fontawesome.com/f665390b3c.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+     <script src="jQuery.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#mainbutton_right_side").click(function () {
+          $(".navigation_start_here").slideToggle();
+          $("#main_iconic").toggle();
+        });
+        $(".hello1").hover(function () {
+          $(".car_image_container .right_to_left").css({
+            " animation-iteration-count ": 2,
+            "margin-left": "0px",
+            transition: "2s",
+          });
+        });
+        $(".hello2").hover(function () {
+          $(".car_image_container .left_to_right").css({
+            " animation-iteration-count ": 2,
+            "margin-left": "0px",
+            transition: "2s",
+          });
+        });
+        $(".counter-count").each(function () {
+          $(this)
+            .prop("Counter", 0)
+            .animate(
+              {
+                Counter: $(this).text(),
+              },
+              {
+                duration: 5000,
+                easing: "swing",
+                step: function (now) {
+                  $(this).text(Math.ceil(now));
+                },
+              }
+            );
+        });
+      });
+    </script>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .main_row_ing h2 {
+        padding: 3vh 0%;
+      }
+      .main_row_ing p {
+        line-height: 2;
+      }
+      .main_row_ing ul {
+        list-style-type: a;
+      }
+      .main_row_ing ul li {
+        line-height: 3;
+
+        font: bold;
+      }
+      .mainh4_padding h4 {
+        padding: 2vh 0%;
+      }
+      .mainh4_padding .col {
+        min-height: 15vh;
+        padding-top: 5vh;
+      }
+     .mainh4_padding .col:hover {
+        background-color: #ffbf00b7;
+      }
+      .mainh4_padding .col {
+        border-bottom: 10px solid #ffbf0094;
+      }
+      a {
+        text-decoration: none;
+        line-height: 5;
+
+        font-weight: 500;
+      }
+      .header {
+        min-height: 8vh;
+        background-color: whitesmoke;
+        line-height: 8vh;
+      }
+      .header a {
+        font-size: 20px;
+        font-weight: 600;
+      }
+      a {
+        text-decoration: none !important;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      a,
+      span,
+      input,
+      textarea,
+      p {
+        font-weight: 400 !important;
+        font-family: "Nunito", sans-serif !important;
+      }
+      h1 {
+        font-size: 28px !important;
+        font: bold !important;
+      }
+      h2 {
+        font-size: 20px !important;
+      }
+      p {
+        font-size: 16px !important;
+      }
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-size: 16px !important;
+      }
+      .parent_navigation_start ul li {
+        margin-right: 0px !important;
+      }
+      .main_for_fun_ul_li ul li {
+        font-weight: 600 !important;
+      }
+      .main_for_fun_ul_li i {
+        font-size: 10px !important;
+      }
+      a {
+        color: black;
+        font-weight: 600 !important;
+      }
+       body {
+        position: relative;
+      }
+      #hello_come_top {
+        bottom: -40px;
+      }
+      #hello_come_top:hover {
+        bottom: 0px;
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />  <link rel="stylesheet" href="css/blackicon.css"><link rel="stylesheet" href="css/fontawesome.min.css" />
+  </head>
+  <body>
+     <section
+      class="whats_app_icon"
+      style="
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        z-index: 10000000000000000000000000;
+      "
+    >
+      <a href="#">
+        <img src="icon/whatsapp.png" height="60px" width="60px" alt=""
+      /></a>
+    </section>
+    <!----------------whats app-->
+    <section
+      class="go_to_top"
+      id="hello_come_top"
+      style="position: fixed; right: 40px; z-index: 100000000000000000000000"
+    >
+      <a href="#">
+        <img src="images/iconicon.png" height="90px" width="70px" alt=""
+      /></a>
+    </section>
+    <!------------------------go to top icon-->
+    <!------------------header start-->
+    <section class="container-fluid">
+      <section class="container-fluid">
+        <section
+          class="row parent_navigation_start"
+          style="background-color: black"
+        >
+          <section class="col">
+            <section
+              class="navigation_start_here"
+              style="font-size: 18px !important"
+            >
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="our story.html">Our Story</a></li>
+                <li><a href="news and blogs.html">News & Blogs</a></li>
+                <li>
+                  <a href="join our hand.html"
+                    >Join our hands - Partner with us</a
+                  >
+                </li>
+                <li><a href="help center.html">Help & Support</a></li>
+                <li><a href="register.html">Register With Us!</a></li>
+                <li><a href="login.html">Login</a></li>
+              </ul>
+            </section>
+            <img
+              src="images/mainmain.png"
+              height="40px"
+              width="40px"
+              alt=""
+              id="mainbutton_right_side"
+            />
+          </section>
+        </section>
+      </section>
+      <section class="row text-center">
+        <section class="col">
+          <br />
+          <img
+            id="main_iconic"
+            src="images/Parking Mudde final.png"
+            height="60px"
+            alt=""
+          />
+        </section>
+      </section>
+    </section>
+    <!------------------header end-->
+
+    <section class="container">
+      <section class="row main_row_ing">
+        <section
+          class="col-xl-12 col-lg-12 col-md-12 col-sm-12 main_for_fun_ul_li"
+        >
+          <h2 style="font-weight: 600 !important">Get in touch</h2>
+          <p>
+            If you are in need of urgent help, the fastest way to speak with one
+            of our team during the hours listed below is via live chat. You can
+            do that via our chatbot, Parky, by clicking on the green bubble in
+            the bottom right-hand corner on any page in our Help Centre or in
+            our app by clicking "Help". Parky will ask you for a few details
+            then transfer you to one of our helpful human beings.
+          </p>
+          <p>
+            Our customer support team is more than happy to help you via live
+            chat during the following hours:
+          </p>
+          <ul>
+            <li>Monday to Friday: 08:00 - 20:00</li>
+            <li>Saturday & Sunday: 09:00 - 18:00</li>
+            <li>Bank holidays: 09:00 - 16:00</li>
+          </ul>
+          <p>
+            If you need our help urgently, chat with one of our helpful team
+            members now.
+          </p>
+          <p>
+            If your enquiry is less urgent, please use this form to send us a
+            message.
+          </p>
+          <br /><br />
+          <h6>Give Feedback:</h6>
+          <p>
+            We’re always working to improve the JustPark experience, so we’d
+            love to hear what’s working and what’s not.
+          </p>
+          <p>
+            If something’s not working we are sorry to hear that and we would
+            like to sort it out. We want to ensure we are aware of any issues so
+            that we can correct them, not just for you but for others too. We do
+            our best not to repeat any mistakes.
+          </p>
+          <ul>
+            <li>
+             <img src="social links/new-moon.png" height="10px" width="10px" alt=""> We’ll work to understand what went
+              wrong and why it happened
+            </li>
+            <li> <img src="social links/new-moon.png" height="10px" width="10px" alt=""> We’ll fix it</li>
+            <li>
+               <img src="social links/new-moon.png" height="10px" width="10px" alt=""> We’ll explain the issue to you, what
+              we have done, and what happens next
+            </li>
+          </ul>
+          <p>
+            Our aim is to reach a mutually acceptable solution and we want you
+            to have this as quickly as possible. We’ll keep you updated along
+            the way and will let you know what we are doing to fix your issue.
+          </p>
+          <p>
+            If you are not satisfied with our service or want to recognise a
+            member of our team who has gone that extra mile, or just wish to
+            give us general feedback, email us at feedback@justpark.com with the
+            following information:
+          </p>
+          <ul>
+            <li>
+              <img src="social links/new-moon.png" height="10px" width="10px" alt=""> Insert Feedback in the subject line
+            </li>
+            <li> <img src="social links/new-moon.png" height="10px" width="10px" alt=""> Your name</li>
+            <li> <img src="social links/new-moon.png" height="10px" width="10px" alt=""> Your booking ID</li>
+            <li>
+               <img src="social links/new-moon.png" height="10px" width="10px" alt=""> Your vehicle registration number
+            </li>
+            <li> <img src="social links/new-moon.png" height="10px" width="10px" alt=""> Your phone number</li>
+          </ul>
+          <p>
+            Please note, the above email is dedicated to feedback only and will
+            not be used for questions related to a booking or a listing.
+          </p>
+          <p>
+            If you have any questions or need help resolving a problem, you can
+            chat to Parky by clicking on the bubble at the bottom of the page.
+            Parky is our very own bot, designed to help with any questions you
+            might have. If you still need to get in touch do not worry, Parky
+            will ask you for a few details then transfer you to one of our
+            helpful human beings.
+          </p>
+          <p>
+            If you have a complaint related to Parking Peace of Mind please
+            click HERE for information about how to make such a complaint. If
+            your complaint is not resolved, you may be able to refer your
+            complaint to the Financial Ombudsman Service (Ombudsman).
+          </p>
+          <p>If you need our help urgently, chat with us now.</p>
+          <section class="box_ing">
+            Was this article helpful? &nbsp;&nbsp;
+            <button type="btn" class="btn btn-dark">Yes</button>&nbsp;
+            <button type="btn" class="btn btn-dark">No</button>
+          </section>
+          <br /><br />
+          <h5>Related articles</h5>
+          <ul>
+            <li>
+              <a href="questions.html">How to contact JustPark via the App.</a>
+            </li>
+            <li><a href="questions.html">I've got a PCN</a></li>
+            <li>
+              <a href="questions.html"
+                >How do I book a parking space with JustPark?</a
+              >
+            </li>
+            <li>
+              <a href="questions.html"
+                >I Have a query about Multi-Use tickets?</a
+              >
+            </li>
+            <li><a href="questions.html">How do I list my space?</a></li>
+          </ul>
+          <!--------------Featured Articles end------>
+          <br />
+          <hr />
+          <br />
+        </section>
+      </section>
+    </section>
+    <section class="container mainh4_padding text-left">
+            <h1 style="font-weight: 600 !important;">Didn't find what you needed? Try these.</h4>
+            <section class="row">
+              <section class="col my-auto" style="position: relative;">
+                <a href="readourpolocies.html">
+                <h2 style="font-weight: 600 !important;">Read our policies</h2>
+                </a>
+                <img style="position:absolute; right: 50px; top: 60px;"  src="social links/right-arrow.png" height="16px" width="16px" alt="">
+                
+              </section>
+              <section class="col my-auto" style="position: relative;">
+                <a href="getintouch.html">
+                <h2 style="font-weight: 600 !important;">Get in touch</h2>
+                </a>
+                <img style="position: absolute; right: 50px; top:60px;"  src="social links/right-arrow.png" height="16px" width="16px" alt="">
+              
+              </section>
+            </section>
+          </section>
+    <!--------------------------->
+    <section class="inputing_sizing">
+      <!--------------------JOIN OUR MAIL LIST FOR EXCLUSIVE start-->
+      <section class="container-fluid bg_yellow my-5">
+        <section class="row text-center">
+          <section class="col">
+            <section class="container">
+              <section class="row padding_container join_exclusive_container">
+                <section class="col my-auto">
+                  <h2>JOIN OUR MAIL LIST FOR EXCLUSIVE</h2>
+                  <h1>Offers & Crazy Deals</h1>
+                  <form action="" method="POST">
+                    <p>
+                      <input
+                        type="text"
+                        name="fname"
+                        placeholder="Enter Your Name"
+                        id=""
+                      />&nbsp;&nbsp;<input
+                        type="email"
+                        name="email"
+                        placeholder="Enter Your Email"
+                        id=""
+                      />&nbsp;&nbsp;<br /><br />
+                      <button
+                        type="button"
+                        class="btn btn-dark"
+                        style="font-weight: 600 !important"
+                      >
+                        Submit
+                      </button>
+                    </p>
+                  </form>
+                </section>
+              </section>
+            </section>
+          </section>
+        </section>
+      </section>
+
+      <!----------------------lower footer start-->
+      <section class="container-fluid margin_footer_start">
+        <section class="row">
+          <section class="col">
+            <section class="container-fluid text-white">
+              <section class="row medium_footer_form_container">
+                <section
+                  class="
+                    col-xl-6 col-lg-6 col-md-12 col-sm-12
+                    padding_container
+                  "
+                >
+                  <h1>GET IN TOUCH</h1>
+                  <p>
+                    We can ensure reliability, low cost fares and most
+                    important, with safety and comfort in mind.
+                  </p>
+                  <p>
+                    Etiam sit amet convallis erat – class aptent taciti sociosqu
+                    ad litora torquent per conubia! Maecenas gravida lacus.
+                    Lorem etiam sit amet convallis erat.
+                  </p>
+                  <ul class="navigation_footer">
+                    <li>
+                      <a href="https://www.facebook.com/ParkingMudde"
+                        ><img
+                          src="social links/facebook.png"
+                          height="40px"
+                          alt=""
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="https://twitter.com/MuddeParking"
+                        ><img
+                          src="social links/twitter.png"
+                          height="40px"
+                          alt=""
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="https://www.instagram.com/parkingmudde/"
+                        ><img
+                          src="social links/instagram.png"
+                          height="40px"
+                          alt=""
+                      /></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.linkedin.com/in/parking-mudde-438601217/"
+                        ><img
+                          src="social links/linkedin.png"
+                          height="40px"
+                          alt=""
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="hello@parkingmudde.com"
+                        ><img src="social links/email.png" height="40px" alt=""
+                      /></a>
+                    </li>
+                  </ul>
+                </section>
+                <section
+                  class="
+                    col-xl-6 col-lg-6 col-md-12 col-sm-12
+                    text-center
+                    bg_yellow
+                    padding_container
+                    medium_footer_form_container_second
+                  "
+                >
+                  <form action="" method="POST">
+                    <p class="left_text">Email</p>
+                    <p>
+                      <input
+                        type="email"
+                        name="email"
+                        placeholder="Enter Your Email"
+                        id=""
+                      />
+                    </p>
+                    <p class="left_text">Name</p>
+                    <p>
+                      <input
+                        type="text"
+                        name="fname"
+                        placeholder="Enter Your Name"
+                        id=""
+                      />
+                    </p>
+                    <p class="left_text">Message</p>
+                    <p id="textareabold">
+                      <textarea
+                        name="message"
+                        placeholder="Enter Your Message"
+                        id=""
+                        cols="30"
+                        rows="10"
+                      ></textarea>
+                    </p>
+                    <p>
+                      <button
+                        type="button"
+                        class="btn btn-dark"
+                        style="font-weight: 600 !important"
+                      >
+                        Submit
+                      </button>
+                    </p>
+                  </form>
+                </section>
+              </section>
+            </section>
+          </section>
+        </section>
+      </section>
+      <!---------------------footer start-->
+    </section>
+    <!--------------------------->
+    <section class="container-fluid lower_footer">
+      <section class="row">
+        <section class="col">
+          <section class="container">
+            <section class="row lower_footer_height text-center">
+              <section class="col my-auto" style="color: white">
+                Sample text. Click to select the text box. Click again or double
+                click to start editing the text. <br />
+                Website Templates created with Website Builder Software. <br />
+                all rights reserved 2021
+              </section>
+            </section>
+          </section>
+        </section>
+      </section>
+    </section>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,1361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>News and Blogs</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/f665390b3c.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+    <script src="jQuery.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#mainbutton_right_side").click(function () {
+          $(".navigation_start_here").slideToggle();
+          $("#main_iconic").toggle();
+        });
+        $(".hello1").hover(function () {
+          $(".car_image_container .right_to_left").css({
+            " animation-iteration-count ": 2,
+            "margin-left": "0px",
+            transition: "2s",
+          });
+        });
+        $(".hello2").hover(function () {
+          $(".car_image_container .left_to_right").css({
+            " animation-iteration-count ": 2,
+            "margin-left": "0px",
+            transition: "2s",
+          });
+        });
+        $(".counter-count").each(function () {
+          $(this)
+            .prop("Counter", 0)
+            .animate(
+              {
+                Counter: $(this).text(),
+              },
+              {
+                duration: 5000,
+                easing: "swing",
+                step: function (now) {
+                  $(this).text(Math.ceil(now));
+                },
+              }
+            );
+        });
+      });
+    </script>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+
+      body {
+        font-family: "Varela Round", "Times New Roman", sans-serif;
+        height: 100vh;
+      }
+
+      .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      button::-moz-focus-inner {
+        border: 0;
+        padding: 0;
+      }
+
+      #calendari {
+        margin: 20px 0;
+        position: relative;
+        overflow: hidden;
+        height: 298px;
+        width: 100%;
+        font-size: 12px;
+        text-transform: uppercase;
+      }
+
+      table {
+        border-collapse: collapse;
+        table-layout: fixed;
+        width: 100%;
+        background-color: #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateX(0);
+        transition: all 0.3s ease;
+      }
+
+      table.actiu {
+        transform: translateX(0px) top;
+      }
+
+      table.inactiu {
+        transition: all 0.3s 0.01s ease;
+      }
+
+      table.amagat-esquerra {
+        transform: translateX(-299px);
+      }
+
+      table.amagat-dreta {
+        transform: translateX(300px);
+      }
+
+      td,
+      th {
+        text-align: center;
+        background-color: #fff;
+      }
+
+      th {
+        padding: 10px;
+      }
+
+      tr:first-child th {
+        font-size: 20px;
+        font-weight: bold;
+        border-left: none;
+        border-top: none;
+      }
+
+      td:last-child,
+      th:last-child {
+        border-right: none;
+      }
+
+      th {
+        border-top: 1px solid rgba(51, 51, 51, 1);
+        border-right: 1px solid rgba(51, 51, 51, 1);
+        border-bottom: 1px solid rgba(51, 51, 51, 1);
+        background-color: #ffffff38;
+        color: black;
+        font-weight: normal;
+      }
+
+      th .any {
+        font-size: 13px;
+
+        font-weight: normal;
+        display: block;
+        text-shadow: none;
+        color: rgba(0, 0, 0, 0.8);
+      }
+
+      tr:nth-child(2) th {
+        padding: 5px;
+      }
+
+      td {
+        padding: 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+      }
+
+      td > span {
+        color: black;
+        padding: 10px;
+        display: block;
+        border: 2px solid transparent;
+        transition: border 0.3s ease;
+      }
+
+      td:nth-child(even) > span {
+        background-color: rgba(0, 0, 0, 0.02);
+      }
+
+      td:last-child > span,
+      td:nth-child(6) > span {
+        color: black;
+      }
+
+      td.avui > span {
+        font-weight: bold;
+        background-color: white;
+        color: black;
+        font-weight: 600 !important;
+        border: 1px solid rgba(51, 51, 51, 1);
+      }
+
+      td.fora > span {
+        opacity: 0.5;
+      }
+
+      td > span:hover {
+        background: rgba(51, 51, 51, 1);
+        color: #fff;
+      }
+
+      .boto-next,
+      .boto-prev {
+        background: white;
+        color: rgba(51, 51, 51, 1);
+        font-family: inherit;
+        border: none;
+        font-size: 18px;
+        font-weight: bold;
+
+        padding: 5px 5px 5px 5px;
+        line-height: 1px;
+        height: 30px;
+        width: 30px;
+        vertical-align: middle;
+        border-radius: 100%;
+        position: absolute;
+        top: 15px;
+      }
+
+      .boto-next {
+        right: 10px;
+        padding-left: 8px;
+      }
+
+      .boto-prev {
+        left: 10px;
+        padding-right: 8px;
+      }
+
+      .boto-next:hover,
+      .boto-prev:hover {
+        background: rgba(51, 51, 51, 1);
+        color: white;
+      }
+
+      button:hover {
+        cursor: pointer;
+      }
+
+      button:focus {
+        outline: none;
+      }
+
+      .news_banner {
+        min-height: 40vh;
+        background-image: url(images/news\ banner.jpg);
+        background-repeat: no-repeat;
+        position: relative;
+        font-weight: 700;
+        color: white;
+        font-size: 30px;
+      }
+
+      .news_banner a {
+        color: white;
+        font-size: 25px;
+      }
+
+      .hovvvering_container {
+        min-height: 40vh;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.404);
+        position: absolute;
+        top: 0px;
+        left: 0px;
+      }
+
+      .news_banner ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .news_main_container ul li {
+        margin-right: 30px;
+      }
+
+      footer {
+        min-height: 40vh;
+        background-color: black;
+        color: white;
+        padding: 8vh 0%;
+      }
+
+      footer ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      footer ul li {
+        line-height: 3;
+      }
+
+      footer ul li a {
+        color: white;
+      }
+
+      footer ul li a:hover {
+        color: royalblue;
+      }
+
+      .image_container_ing {
+        overflow: hidden;
+      }
+
+      .image_container_ing:hover img {
+        transform: scale(1.2);
+        transition: 1.5s;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      a,
+      span,
+      input,
+      textarea,
+      p {
+        font-weight: 400 !important;
+        font-family: "Nunito", sans-serif !important;
+      }
+
+      h1 {
+        font-size: 28px !important;
+        font: bold !important;
+      }
+
+      h2 {
+        font-size: 20px !important;
+      }
+
+      p {
+        font-size: 16px !important;
+      }
+
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-size: 16px !important;
+      }
+
+      .right_main_container_for_list ul li a {
+        font-size: 17px !important;
+        color: black;
+      }
+
+      .right_main_container_for_list ul li a:hover {
+        color: #ffbf00ab;
+        text-shadow: 1px 0px 0px rgba(0, 0, 0, 0.26);
+      }
+
+      .right_main_container_for_list ul li {
+        line-height: 2;
+      }
+
+      .right_main_container_for_list i {
+        font-size: 14px !important;
+        color: rgba(0, 0, 0, 0.637) !important;
+      }
+
+      .margin_top_card_for_fooetr {
+        margin-top: 20px;
+      }
+
+      #form_container_main_search {
+        position: relative;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+      }
+
+      #main_search_container {
+        height: 50px;
+        border: transparent;
+        border-left: 6px solid #ffbf00ab;
+        padding-left: 5%;
+        width: 100%;
+      }
+
+      #icon_search {
+        position: absolute;
+        right: 15px;
+        top: 14px;
+        color: #ffbf00ab !important;
+        font-size: 20px !important;
+      }
+
+      .main_link_column_white a {
+        color: white !important;
+      }
+      body {
+        position: relative;
+      }
+      #hello_come_top {
+        bottom: -40px;
+      }
+      #hello_come_top:hover {
+        bottom: 0px;
+      }
+    </style>
+    <link rel="stylesheet" href="css/blackicon.css" />
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+  </head>
+
+  <body>
+    <section
+      class="whats_app_icon"
+      style="
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        z-index: 10000000000000000000000000;
+      "
+    >
+      <a href="#">
+        <img src="icon/whatsapp.png" height="60px" width="60px" alt=""
+      /></a>
+    </section>
+    <!----------------whats app-->
+    <section
+      class="go_to_top"
+      id="hello_come_top"
+      style="position: fixed; right: 40px; z-index: 100000000000000000000000"
+    >
+      <a href="#">
+        <img src="images/iconicon.png" height="90px" width="70px" alt=""
+      /></a>
+    </section>
+    <!------------------------go to top icon-->
+    <!------------------header start-->
+    <section class="container-fluid">
+      <section class="container-fluid">
+        <section
+          class="row parent_navigation_start"
+          style="background-color: black"
+        >
+          <section class="col">
+            <section
+              class="navigation_start_here"
+              style="font-size: 18px !important"
+            >
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="our story.html">Our Story</a></li>
+                <li><a href="news and blogs.html">News & Blogs</a></li>
+                <li>
+                  <a href="join our hand.html"
+                    >Join our hands - Partner with us</a
+                  >
+                </li>
+                <li><a href="help center.html">Help & Support</a></li>
+                <li><a href="register.html">Register With Us!</a></li>
+                <li><a href="login.html">Login</a></li>
+              </ul>
+            </section>
+            <img
+              src="images/mainmain.png"
+              height="40px"
+              width="40px"
+              alt=""
+              id="mainbutton_right_side"
+            />
+          </section>
+        </section>
+      </section>
+      <section class="row text-center">
+        <section class="col">
+          <br />
+          <img
+            id="main_iconic"
+            src="images/Parking Mudde final.png"
+            height="60px"
+            alt=""
+          />
+        </section>
+      </section>
+    </section>
+    <!------------------header end-->
+    <!--------------------new main container start-->
+    <section class="container my-5">
+      <section class="row news_main_container">
+        <section
+          class="col-xl-8 col-lg-8 col-md-12 col-sm-12 main_link_column_white"
+        >
+          <section class="image_container_ing">
+            <img src="news images/19.webp" width="100%" alt="" />
+          </section>
+          <br />
+          <small class="text-muted h6">Hindustan times </small><br />
+          <small class="text-muted h6">SEP 19, 2018 | 03:29 PM IST</small>
+          <h1 style="font-weight: 600 !important">
+            Lakhs fined for illegal parking, but to no avail
+          </h1>
+          <p></p>
+          <button type="button" class="btn btn-dark">
+            <a
+              href="https://www.hindustantimes.com/gurgaon/lakhs-fined-for-illegal-parking-but-to-no-avail/story-6BJvtED3NqUagnamW7i4DJ.html
+"
+              >Read More</a
+            >
+          </button>
+          <br />
+          <hr />
+          <br />
+          <section class="image_container_ing">
+            <img src="news images/20.webp" width="100%" alt="" />
+          </section>
+          <br />
+          <small class="text-muted h6">Times of India </small><br />
+          <small class="text-muted h6">SEP 19, 2018 | 03:29 PM IST </small>
+          <h1 style="font-weight: 600 !important">
+            Parking: Delhi: Illegal parking may cost you Rs 5,500
+          </h1>
+          <p></p>
+          <button type="button" class="btn btn-dark">
+            <a
+              href="https://timesofindia.indiatimes.com/city/delhi/illegal-parking-may-cost-you-rs-5500/articleshow/59706505.cms
+"
+              >Read More</a
+            >
+          </button>
+          <br />
+          <hr />
+          <br />
+
+          <section class="image_container_ing">
+            <img src="news images/21.jpg" width="100%" alt="" />
+          </section>
+          <br />
+          <small class="text-muted h6">The Hindu </small><br />
+          <small class="text-muted h6">Nov 01, 2016 | 20:00 IST</small>
+          <h1 style="font-weight: 600 !important">
+            Fine for wrong parking doubled
+          </h1>
+          <p></p>
+          <button type="button" class="btn btn-dark">
+            <a
+              href="https://www.thehindu.com/news/cities/bangalore/Fine-for-wrong-parking-doubled/article14991722.ece
+"
+              >Read More</a
+            >
+          </button>
+          <br />
+          <hr />
+          <br />
+
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-dark">Previous</button>&nbsp;
+            <button type="button" class="btn btn-dark">Current</button>&nbsp;
+            <button type="button" class="btn btn-dark">Next</button>
+          </div>
+        </section>
+        <section
+          class="
+            col-xl-4 col-lg-4 col-md-12 col-sm-12
+            right_main_container_for_list
+          "
+        >
+          <h2 style="font-weight: 600 !important">Search</h2>
+          <hr />
+          <br />
+          <form action="" method="POST" id="form_container_main_search">
+            <input
+              type="search"
+              name="srch"
+              id="main_search_container"
+              placeholder="Search Here"
+            />
+            <img
+              src="social links/loupe.png"
+              height="16px"
+              width="16px"
+              alt=""
+              style="position: absolute; top: 18px; right: 20px"
+            />
+          </form>
+
+          <br /><br />
+
+          <h2 style="font-weight: 600 !important; font-size: 28px !important">
+            Categories
+            <hr />
+          </h2>
+          <ul>
+            <li>
+              <a href="#"
+                ><img
+                  src="social links/checkbox-mark.png"
+                  height="16px"
+                  width="16px"
+                  alt=""
+                />&nbsp; Wrong Parking/Illegal Parking
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="social links/checkbox-mark.png"
+                  height="16px"
+                  width="16px"
+                  alt=""
+                />&nbsp; Parking Space not available</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="social links/checkbox-mark.png"
+                  height="16px"
+                  width="16px"
+                  alt=""
+                />&nbsp; Hefty Parking Fines</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="social links/checkbox-mark.png"
+                  height="16px"
+                  width="16px"
+                  alt=""
+                />&nbsp; Parking in front of office/house gates
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="social links/checkbox-mark.png"
+                  height="16px"
+                  width="16px"
+                  alt=""
+                />&nbsp; New Parking Policy
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="social links/checkbox-mark.png"
+                  height="16px"
+                  width="16px"
+                  alt=""
+                />&nbsp; Clogging Roads</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="social links/checkbox-mark.png"
+                  height="16px"
+                  width="16px"
+                  alt=""
+                />&nbsp; Heavy Traffic Jams</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="social links/checkbox-mark.png"
+                  height="16px"
+                  width="16px"
+                  alt=""
+                />&nbsp; Parking Rules & Regulations
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="social links/checkbox-mark.png"
+                  height="16px"
+                  width="16px"
+                  alt=""
+                />&nbsp; Parking Violations
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="social links/checkbox-mark.png"
+                  height="16px"
+                  width="16px"
+                  alt=""
+                />&nbsp; Free Parking is not your right!
+              </a>
+            </li>
+          </ul>
+          <br /><br />
+
+          <h2 style="font-weight: 600 !important; font-size: 28px !important">
+            Recent posts
+            <hr />
+          </h2>
+          <br />
+
+          <div class="card mb-3" style="max-width: 100%">
+            <div class="row no-gutters">
+              <div class="col-md-4 my-auto">
+                <img src="news images/23.jpg" width="100%" alt="..." />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    <a
+                      href="https://www.hindustantimes.com/delhi/park-illegally-pay-mcd-fine-of-rs-3-000-5-000/story-43xBsWR9PKXsfWr21HyaZO.html
+"
+                    >
+                      Park illegally, pay MCD fine of Rs 3,000-5,000</a
+                    >
+                  </h5>
+
+                  <p class="card-text">
+                    <small class="text-muted"
+                      >JUN 17, 2011 | 01:31 AM IST</small
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3" style="max-width: 100%">
+            <div class="row no-gutters">
+              <div class="col-md-4 my-auto">
+                <img src="news images/22.jpg" width="100%" alt="..." />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    <a
+                      href="https://indianexpress.com/article/cities/chandigarh/parking-problems-on-the-rise-proposals-for-solutions-gather-dust/
+"
+                    >
+                      Parking problems on the rise, proposals for solutions
+                      gather dust
+                    </a>
+                  </h5>
+
+                  <p class="card-text">
+                    <small class="text-muted">Dec 3, 2014 | 4:48:57 am</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3" style="max-width: 100%">
+            <div class="row no-gutters">
+              <div class="col-md-4 my-auto">
+                <img src="news images/20.webp" width="100%" alt="..." />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    <a
+                      href="https://www.thehindu.com/news/cities/bangalore/Fine-for-wrong-parking-doubled/article14991722.ece
+"
+                    >
+                      Fine for wrong parking doubled
+                    </a>
+                  </h5>
+
+                  <p class="card-text">
+                    <small class="text-muted">Nov 01, 2016 | 20:00 IST</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br /><br />
+          <!----------------calander start-->
+          <h2 style="font-weight: 900 !important; font-size: 28px !important">
+            Calander
+          </h2>
+          <hr />
+          <div class="wrapper">
+            <div id="calendari"></div>
+          </div>
+          <!----------------calander end-->
+
+          <br /><br />
+          <h2 style="font-weight: 900 !important; font-size: 28px !important">
+            Social Media
+            <hr />
+          </h2>
+          <br />
+          <a
+            href="https://www.hindustantimes.com/delhi/park-illegally-pay-mcd-fine-of-rs-3-000-5-000/story-43xBsWR9PKXsfWr21HyaZO.html
+"
+            ><img
+              src="news images/23.jpg"
+              height="110px"
+              width="32.2%"
+              style="padding: 5px"
+              alt=""
+          /></a>
+          <a
+            href="https://indianexpress.com/article/cities/chandigarh/parking-problems-on-the-rise-proposals-for-solutions-gather-dust/
+"
+            ><img
+              src="news images/22.jpg"
+              height="110px"
+              style="padding: 5px"
+              width="32.2%"
+              alt=""
+          /></a>
+          <a
+            href="https://www.thehindu.com/news/cities/bangalore/Fine-for-wrong-parking-doubled/article14991722.ece
+"
+            ><img
+              src="news images/21.jpg"
+              height="110px"
+              style="padding: 5px"
+              width="32.2%"
+              alt=""
+          /></a>
+          <a
+            href="https://timesofindia.indiatimes.com/city/delhi/illegal-parking-may-cost-you-rs-5500/articleshow/59706505.cms
+"
+            ><img
+              src="news images/20.webp"
+              height="110px"
+              style="padding: 5px"
+              width="32.2%"
+              alt=""
+          /></a>
+          <a
+            href="https://www.hindustantimes.com/gurgaon/lakhs-fined-for-illegal-parking-but-to-no-avail/story-6BJvtED3NqUagnamW7i4DJ.html
+"
+            ><img
+              src="news images/19.webp"
+              height="110px"
+              style="padding: 5px"
+              width="32.2%"
+              alt=""
+          /></a>
+          <a
+            href="https://timesofindia.indiatimes.com/city/chandigarh/parking-your-car-wrongly-can-land-you-in-trouble-dsp-traffic/articleshow/66779924.cms "
+            ><img
+              src="news images/18.webp"
+              height="110px"
+              style="padding: 5px"
+              width="32.2%"
+              alt=""
+          /></a>
+          <a
+            href="https://www.indiatoday.in/mail-today/story/delhi-ready-to-kill-for-a-parking-slot-1429742-2019-01-13
+"
+            ><img
+              src="news images/17.webp"
+              height="110px"
+              style="padding: 5px"
+              width="32.2%"
+              alt=""
+          /></a>
+          <a
+            href="https://economictimes.indiatimes.com/news/politics-and-nation/parking-even-in-front-of-your-home-may-no-longer-be-free/articleshow/67956287.cms
+"
+            ><img
+              src="news images/16.webp"
+              height="110px"
+              style="padding: 5px"
+              width="32.2%"
+              alt=""
+          /></a>
+          <a
+            href="https://timesofindia.indiatimes.com/city/pune/penalty-quantum-set-for-a-leap-to-stop-illegal-parking/articleshow/68294374.cms
+"
+            ><img
+              src="news images/15.webp"
+              height="110px"
+              style="padding: 5px"
+              width="32.2%"
+              alt=""
+          /></a>
+
+          <br /><br />
+          <br />
+          <h2 style="font-weight: 600 !important">Last Read</h2>
+          <hr />
+          <br /><br />
+          <ul>
+            <li>
+              <a href="#"
+                ><img
+                  src="social links/checkbox-mark.png"
+                  height="16px"
+                  width="16px"
+                  alt=""
+                />&nbsp; March 2019</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="social links/checkbox-mark.png"
+                  height="16px"
+                  width="16px"
+                  alt=""
+                />&nbsp; April 2018</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="social links/checkbox-mark.png"
+                  height="16px"
+                  width="16px"
+                  alt=""
+                />&nbsp; February 2019
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="social links/checkbox-mark.png"
+                  height="16px"
+                  width="16px"
+                  alt=""
+                />&nbsp; May 2018
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="social links/checkbox-mark.png"
+                  height="16px"
+                  width="16px"
+                  alt=""
+                />&nbsp; Octoebr 2018
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="social links/checkbox-mark.png"
+                  height="16px"
+                  width="16px"
+                  alt=""
+                />&nbsp; July 2018</a
+              >
+            </li>
+          </ul>
+        </section>
+      </section>
+    </section>
+    <!--------------------new main container end-->
+    <!-----------------add banner-->
+    <section class="container">
+      <section class="row add_banner">
+        <section class="col">
+          <section class="container-fluid">
+            <section class="row">
+              <section class="col-xl-12 col-lg-12 col-md-12 col-ms-12">
+                <section
+                  class="carousel my-5 carousel_container_padding"
+                  data-flickity='{"wrapAround":true,"autoPlay":true, "pageDots":false, "prevNextButtons" : false}'
+                >
+                  <section class="carousel-cell my-auto bg_yellow">
+                    <img src="images/main_taxi.jpeg" width="100%" alt="" />
+                  </section>
+                  <section class="carousel-cell bg_yellow">
+                    <img src="images/main_taxi.jpeg" width="100%" alt="" />
+                  </section>
+                  <section class="carousel-cell bg_yellow">
+                    <img src="images/main_taxi.jpeg" width="100%" alt="" />
+                  </section>
+                  <section class="carousel-cell bg_yellow">
+                    <img src="images/main_taxi.jpeg" width="100%" alt="" />
+                  </section>
+                </section>
+              </section>
+            </section>
+          </section>
+        </section>
+      </section>
+    </section>
+
+    <!--------------------------->
+    <section class="inputing_sizing">
+      <!--------------------JOIN OUR MAIL LIST FOR EXCLUSIVE start-->
+      <section class="container-fluid bg_yellow">
+        <section class="row text-center">
+          <section class="col">
+            <section class="container">
+              <section class="row padding_container join_exclusive_container">
+                <section class="col my-auto">
+                  <h2>JOIN OUR MAIL LIST FOR EXCLUSIVE</h2>
+                  <h1>Offers & Crazy Deals</h1>
+                  <form action="" method="POST">
+                    <p>
+                      <input
+                        type="text"
+                        name="fname"
+                        placeholder="Enter Your Name"
+                        id=""
+                      />&nbsp;&nbsp;<input
+                        type="email"
+                        name="email"
+                        placeholder="Enter Your Email"
+                        id=""
+                      />&nbsp;&nbsp;<br /><br />
+                      <button
+                        type="button"
+                        class="btn btn-dark"
+                        style="font-weight: 600 !important"
+                      >
+                        Submit
+                      </button>
+                    </p>
+                  </form>
+                </section>
+              </section>
+            </section>
+          </section>
+        </section>
+      </section>
+
+      <!----------------------lower footer start-->
+      <section class="container-fluid margin_footer_start">
+        <section class="row">
+          <section class="col">
+            <section class="container-fluid text-white">
+              <section class="row medium_footer_form_container">
+                <section
+                  class="
+                    col-xl-6 col-lg-6 col-md-12 col-sm-12
+                    padding_container
+                  "
+                >
+                  <h1>GET IN TOUCH</h1>
+                  <p>
+                    We can ensure reliability, low cost fares and most
+                    important, with safety and comfort in mind.
+                  </p>
+                  <p>
+                    Etiam sit amet convallis erat – class aptent taciti sociosqu
+                    ad litora torquent per conubia! Maecenas gravida lacus.
+                    Lorem etiam sit amet convallis erat.
+                  </p>
+                  <ul class="navigation_footer">
+                    <li>
+                      <a href="https://www.facebook.com/ParkingMudde"
+                        ><img
+                          src="social links/facebook.png"
+                          height="40px"
+                          alt=""
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="https://twitter.com/MuddeParking"
+                        ><img
+                          src="social links/twitter.png"
+                          height="40px"
+                          alt=""
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="https://www.instagram.com/parkingmudde/"
+                        ><img
+                          src="social links/instagram.png"
+                          height="40px"
+                          alt=""
+                      /></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.linkedin.com/in/parking-mudde-438601217/"
+                        ><img
+                          src="social links/linkedin.png"
+                          height="40px"
+                          alt=""
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="hello@parkingmudde.com"
+                        ><img src="social links/email.png" height="40px" alt=""
+                      /></a>
+                    </li>
+                  </ul>
+                </section>
+                <section
+                  class="
+                    col-xl-6 col-lg-6 col-md-12 col-sm-12
+                    text-center
+                    bg_yellow
+                    padding_container
+                    medium_footer_form_container_second
+                  "
+                >
+                  <form action="" method="POST">
+                    <p class="left_text">Email</p>
+                    <p>
+                      <input
+                        type="email"
+                        name="email"
+                        placeholder="Enter Your Email"
+                        id=""
+                      />
+                    </p>
+                    <p class="left_text">Name</p>
+                    <p>
+                      <input
+                        type="text"
+                        name="fname"
+                        placeholder="Enter Your Name"
+                        id=""
+                      />
+                    </p>
+                    <p class="left_text">Message</p>
+                    <p id="textareabold">
+                      <textarea
+                        name="message"
+                        placeholder="Enter Your Message"
+                        id=""
+                        cols="30"
+                        rows="10"
+                      ></textarea>
+                    </p>
+                    <p>
+                      <button
+                        type="button"
+                        class="btn btn-dark"
+                        style="font-weight: 600 !important"
+                      >
+                        Submit
+                      </button>
+                    </p>
+                  </form>
+                </section>
+              </section>
+            </section>
+          </section>
+        </section>
+      </section>
+      <!---------------------footer start-->
+    </section>
+    <!--------------------------->
+    <section class="container-fluid lower_footer">
+      <section class="row">
+        <section class="col">
+          <section class="container">
+            <section class="row lower_footer_height text-center">
+              <section class="col my-auto" style="color: white">
+                Sample text. Click to select the text box. Click again or double
+                click to start editing the text. <br />
+                Website Templates created with Website Builder Software. <br />
+                all rights reserved 2021
+              </section>
+            </section>
+          </section>
+        </section>
+      </section>
+    </section>
+    <!-- Optional JavaScript -->
+    <script>
+      var mesos = [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December",
+      ];
+
+      var dies = [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+      ];
+
+      var dies_abr = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+      Number.prototype.pad = function (num) {
+        var str = "";
+        for (var i = 0; i < num - this.toString().length; i++) str += "0";
+        return (str += this.toString());
+      };
+
+      function calendari(widget, data) {
+        var original = widget.getElementsByClassName("actiu")[0];
+
+        if (typeof original === "undefined") {
+          original = document.createElement("table");
+          original.setAttribute(
+            "data-actual",
+            data.getFullYear() +
+              "/" +
+              data.getMonth().pad(2) +
+              "/" +
+              data.getDate().pad(2)
+          );
+          widget.appendChild(original);
+        }
+
+        var diff = data - new Date(original.getAttribute("data-actual"));
+
+        diff = new Date(diff).getMonth();
+
+        var e = document.createElement("table");
+
+        e.className = diff === 0 ? "amagat-esquerra" : "amagat-dreta";
+        e.innerHTML = "";
+
+        widget.appendChild(e);
+
+        e.setAttribute(
+          "data-actual",
+          data.getFullYear() +
+            "/" +
+            data.getMonth().pad(2) +
+            "/" +
+            data.getDate().pad(2)
+        );
+
+        var fila = document.createElement("tr");
+        var titol = document.createElement("th");
+        titol.setAttribute("colspan", 7);
+
+        var boto_prev = document.createElement("button");
+        boto_prev.className = "boto-prev";
+        boto_prev.innerHTML = "&#9666;";
+
+        var boto_next = document.createElement("button");
+        boto_next.className = "boto-next";
+        boto_next.innerHTML = "&#9656;";
+
+        titol.appendChild(boto_prev);
+        titol.appendChild(document.createElement("span")).innerHTML =
+          mesos[data.getMonth()] +
+          '<span class="any">' +
+          data.getFullYear() +
+          "</span>";
+
+        titol.appendChild(boto_next);
+
+        boto_prev.onclick = function () {
+          data.setMonth(data.getMonth() - 1);
+          calendari(widget, data);
+        };
+
+        boto_next.onclick = function () {
+          data.setMonth(data.getMonth() + 1);
+          calendari(widget, data);
+        };
+
+        fila.appendChild(titol);
+        e.appendChild(fila);
+
+        fila = document.createElement("tr");
+
+        for (var i = 1; i < 7; i++) {
+          fila.innerHTML += "<th>" + dies_abr[i] + "</th>";
+        }
+
+        fila.innerHTML += "<th>" + dies_abr[0] + "</th>";
+        e.appendChild(fila);
+
+        /* Obtinc el dia que va acabar el mes anterior */
+        var inici_mes = new Date(
+          data.getFullYear(),
+          data.getMonth(),
+          -1
+        ).getDay();
+
+        var actual = new Date(data.getFullYear(), data.getMonth(), -inici_mes);
+
+        /* 6 setmanes per cobrir totes les posiblitats
+         *  Quedaria mes consistent alhora de mostrar molts mesos
+         *  en una quadricula */
+        for (var s = 0; s < 6; s++) {
+          var fila = document.createElement("tr");
+
+          for (var d = 1; d < 8; d++) {
+            var cela = document.createElement("td");
+            var span = document.createElement("span");
+
+            cela.appendChild(span);
+
+            span.innerHTML = actual.getDate();
+
+            if (actual.getMonth() !== data.getMonth()) cela.className = "fora";
+
+            /* Si es avui el decorem */
+            if (
+              data.getDate() == actual.getDate() &&
+              data.getMonth() == actual.getMonth()
+            )
+              cela.className = "avui";
+
+            actual.setDate(actual.getDate() + 1);
+            fila.appendChild(cela);
+          }
+
+          e.appendChild(fila);
+        }
+
+        setTimeout(function () {
+          e.className = "actiu";
+          original.className +=
+            diff === 0 ? " amagat-dreta" : " amagat-esquerra";
+        }, 20);
+
+        original.className = "inactiu";
+
+        setTimeout(function () {
+          var inactius = document.getElementsByClassName("inactiu");
+          for (var i = 0; i < inactius.length; i++)
+            widget.removeChild(inactius[i]);
+        }, 1000);
+      }
+
+      calendari(document.getElementById("calendari"), new Date());
+    </script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

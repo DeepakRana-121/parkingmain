@@ -1,0 +1,35 @@
+.main_team_container {
+  padding-top: 15vh;
+}
+#padding_para {
+  padding: 1% 8% 8% 0%;
+}
+.team_image {
+  background-color: yellow;
+  margin-top: 150px;
+  height: 30vh;
+}
+.team_image img {
+  margin-top: -150px;
+}
+@media (max-width: 992px) {
+  .team_image img {
+    width: 40%;
+    margin-top: 10px;
+  }
+  .margin_top_minus {
+    margin-top: -100px;
+  }
+}
+@media (max-width: 768px) {
+  .team_image {
+    min-height: 40vh;
+  }
+  .team_image img {
+    width: 80%;
+    margin-top: 10px;
+  }
+  .margin_top_minus {
+    margin-top: 100px;
+  }
+}

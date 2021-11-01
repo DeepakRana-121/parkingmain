@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/f665390b3c.js"
+      crossorigin="anonymous"
+    ></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+    <title>Questions</title>
+    <script
+      src="https://kit.fontawesome.com/f665390b3c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="jQuery.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#the1").click(function () {
+          $("#gg1").toggle();
+        });
+        $("#the2").click(function () {
+          $("#gg2").toggle();
+        });
+        $("#the3").click(function () {
+          $("#gg4").toggle();
+        });
+        $("#the4").click(function () {
+          $("#gg4").toggle();
+        });
+        $("#the5").click(function () {
+          $("#gg5").toggle();
+        });
+        $("#the6").click(function () {
+          $("#gg6").toggle();
+        });
+        $("#the7").click(function () {
+          $("#gg7").toggle();
+        });
+      });
+    </script>
+      <script src="jQuery.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#mainbutton_right_side").click(function () {
+          $(".navigation_start_here").slideToggle();
+          $("#main_iconic").toggle();
+        });
+        $(".hello1").hover(function () {
+          $(".car_image_container .right_to_left").css({
+            " animation-iteration-count ": 2,
+            "margin-left": "0px",
+            transition: "2s",
+          });
+        });
+        $(".hello2").hover(function () {
+          $(".car_image_container .left_to_right").css({
+            " animation-iteration-count ": 2,
+            "margin-left": "0px",
+            transition: "2s",
+          });
+        });
+        $(".counter-count").each(function () {
+          $(this)
+            .prop("Counter", 0)
+            .animate(
+              {
+                Counter: $(this).text(),
+              },
+              {
+                duration: 5000,
+                easing: "swing",
+                step: function (now) {
+                  $(this).text(Math.ceil(now));
+                },
+              }
+            );
+        });
+      });
+    </script>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .main_container_for_fun {
+        line-height: 3;
+      }
+      .main_container_for_fun ul {
+        list-style-type: none;
+        margin: 0%;
+        padding: 0%;
+      }
+      .main_container_for_fun ul li {
+        margin-top: 30px;
+        font-size: 17px;
+      }
+      /*********************/
+      .main_for_left {
+        line-height: 1;
+        padding-top: 6vh;
+      }
+      .main_for_left ul {
+        display: none;
+      }
+      .main_for_left ul li {
+        font-size: 16px;
+        margin-top: 10px;
+      }
+      .main_for_left h6 {
+        margin-top: 10px;
+      }
+      a {
+        text-decoration: none !important;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      a,
+      span,
+      input,
+      textarea,
+      p {
+        font-weight: 400 !important;
+        font-family: "Nunito", sans-serif !important;
+      }
+      h1 {
+        font-size: 28px !important;
+        font: bold !important;
+      }
+      h2 {
+        font-size: 20px !important;
+      }
+      p {
+        font-size: 16px !important;
+      }
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-size: 16px !important;
+      }
+        .background_div {
+        min-height: 40vh;
+        background-color: lightblue;
+        background-image: url(images/girlwithphone.png);
+        background-position: center;
+        background-size: cover;
+      }
+      .width_of_the_search_box {
+        width: 350px;
+      }
+      .data_container {
+        margin-top: 20px;
+      }
+      .data_container h6 {
+        font-weight: 600;
+        padding: 2vh 0%;
+      }
+      .mainh4_padding h4 {
+        padding: 2vh 0%;
+      }
+      .mainh4_padding .col {
+        min-height: 15vh;
+        padding-top: 5vh;
+      }
+      .mainh4_padding .col:hover {
+        background-color: #ffbf00b7;
+      }
+      .mainh4_padding .col {
+        border-bottom: 10px solid #ffbf0094;
+      }
+      .header {
+        min-height: 8vh;
+        background-color: whitesmoke;
+        line-height: 8vh;
+      }
+      .header a {
+        font-size: 20px;
+        font-weight: 600;
+      }
+      .onhover {
+        cursor: pointer;
+      }
+       a {
+        text-decoration: none !important;
+      } h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      a,
+      span,
+      input,
+      textarea,
+      p {
+        font-weight: 400 !important;
+        font-family: "Nunito", sans-serif !important; color: black;
+      }
+      h1 {
+        font-size: 28px !important;
+        font: bold !important;
+      }
+      h2 {
+        font-size: 20px !important;
+      }
+      p {
+        font-size: 16px !important;
+      }
+      h3,h4,h5,h6{font-size: 16px !important;}
+a{color: royalblue;}
+.main_problem_here a{font-weight: 600 !important; color: green;}
+.main_problem_here h6 a {color: black;}
+.main_problem_here :hover{color: green;}
+body{position: relative;}
+.main_for_left{text-transform: capitalize;}
+.main_for_left h6{font-weight: 600 !important;}
+.main_for_left a{color: black;}
+.main_for_left a:hover{color: green;}
+    body {
+        position: relative;
+      }
+      #hello_come_top {
+        bottom: -40px;
+      }
+      #hello_come_top:hover {
+        bottom: 0px;
+      }
+   
+   </style>  <link rel="stylesheet" href="css/blackicon.css"><link rel="stylesheet" href="css/fontawesome.min.css" />
+  </head>
+  <body>
+     <section
+      class="whats_app_icon"
+      style="
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        z-index: 10000000000000000000000000;
+      "
+    >
+      <a href="#">
+        <img src="icon/whatsapp.png" height="60px" width="60px" alt=""
+      /></a>
+    </section>
+    <!----------------whats app-->
+    <section
+      class="go_to_top"
+      id="hello_come_top"
+      style="position: fixed; right: 40px; z-index: 100000000000000000000000"
+    >
+      <a href="#">
+        <img src="images/iconicon.png" height="90px" width="70px" alt=""
+      /></a>
+    </section>
+    <!------------------------go to top icon-->
+    <!------------------header start-->
+    <section class="container-fluid">
+      <section class="container-fluid">
+        <section
+          class="row parent_navigation_start"
+          style="background-color: black"
+        >
+          <section class="col">
+           <section
+              class="navigation_start_here"
+              style="font-size: 18px !important"
+            >
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="our story.html">Our Story</a></li>
+                <li><a href="news and blogs.html">News & Blogs</a></li>
+                <li>
+                  <a href="join our hand.html"
+                    >Join our hands - Partner with us</a
+                  >
+                </li>
+                <li><a href="help center.html">Help & Support</a></li>
+                <li><a href="register.html">Register With Us!</a></li>
+                <li><a href="login.html">Login</a></li>
+              </ul>
+            </section>
+            <img
+              src="images/mainmain.png"
+              height="40px"
+              width="40px"
+              alt=""
+              id="mainbutton_right_side"
+            />
+          </section>
+        </section>
+      </section>
+      <section class="row text-center">
+        <section class="col">
+          <br />
+          <img
+            id="main_iconic"
+            src="images/Parking Mudde final.png"
+            height="60px"
+            alt=""
+          />
+        </section>
+      </section>
+    </section>
+    <!------------------header end-->
+
+    <section class="container my-4">
+      <section class="row main_container_for_fun">
+        <section class="col-xl-2 col-lg-2 col-md-3 col-sm-12 main_for_left">
+          <!--------------------------->
+          <h6 id="the1">heading question</h6>
+          <ul id="gg1" style="display: block">
+            <li><a href="questions.html">Home</a></li>
+            <li><a href="questions.html">Home</a></li>
+            <li><a href="questions.html">Home</a></li>
+            <li><a href="questions.html">Home</a></li>
+            <li><a href="questions.html">Home</a></li>
+            <li><a href="questions.html">Home</a></li>
+          </ul>
+          <br />
+          <h6 id="the2">heading question</h6>
+          <ul id="gg2">
+            <li><a href="questions.html">Home</a></li>
+            <li><a href="questions.html">Home</a></li>
+            <li><a href="questions.html">Home</a></li>
+            <li><a href="questions.html">Home</a></li>
+            <li><a href="questions.html">Home</a></li>
+            <li><a href="questions.html">Home</a></li>
+            <li><a href="questions.html">Home</a></li>
+          </ul>
+          <br />
+          <h6 id="the3">heading question</h6>
+          <ul id="gg3">
+            <li><a href="questions.html">Home</a></li>
+            <li><a href="questions.html">Home</a></li>
+            <li><a href="questions.html">Home</a></li>
+            <li><a href="questions.html">Home</a></li>
+            <li><a href="questions.html">Home</a></li>
+            <li><a href="questions.html">Home</a></li>
+          </ul>
+          <br />
+          <h6 id="the4">heading question</h6>
+          <ul id="gg4">
+            <li><a href="questions.html">Home</a></li>
+            <li><a href="questions.html">Home</a></li>
+            <li><a href="questions.html">Home</a></li>
+            <li><a href="questions.html">Home</a></li>
+            <li><a href="questions.html">Home</a></li>
+            <li><a href="questions.html">Home</a></li>
+          </ul>
+          <br />
+          <h6 id="the5">heading question</h6>
+          <ul id="gg5">
+            <li><a href="questions.html">Home</a></li>
+            <li><a href="questions.html">Home</a></li>
+            <li><a href="questions.html">Home</a></li>
+            <li><a href="questions.html">Home</a></li>
+            <li><a href="questions.html">Home</a></li>
+            <li><a href="questions.html">Home</a></li>
+          </ul>
+          <br />
+          <h6 id="the6">heading question</h6>
+          <ul id="gg6">
+            <li><a href="questions.html">Home</a></li>
+            <li><a href="questions.html">Home</a></li>
+            <li><a href="questions.html">Home</a></li>
+            <li><a href="questions.html">Home</a></li>
+            <li><a href="questions.html">Home</a></li>
+            <li><a href="questions.html">Home</a></li>
+          </ul>
+          <br />
+          <h6 id="the7">heading question</h6>
+          <ul id="gg7">
+            <li><a href="questions.html">Home</a></li>
+            <li><a href="questions.html">Home</a></li>
+            <li><a href="questions.html">Home</a></li>
+            <li><a href="questions.html">Home</a></li>
+            <li><a href="questions.html">Home</a></li>
+            <li><a href="questions.html">Home</a></li>
+          </ul>
+          <!--------------------------->
+        </section>
+        <section class="col-xl-10 col-lg-10 col-md-9 col-sm-12">
+          <h1 style="font-weight: 600 !important;">How do I book a parking space with JustPark?</h1>
+          <p>
+            You can find a great space to book quickly and easily in three
+            simple steps!
+          </p>
+          <h4 style="font-weight: 600 !important;">Find your Space</h4>
+          <ul>
+            <li>
+             <img src="social links/checkbox-mark.png" height="16px" width="16px" alt="">&nbsp; Search where you'd like
+              park and select the dates and times for the duration of your stay.
+            </li>
+            <li>
+             <img src="social links/checkbox-mark.png" height="16px" width="16px" alt="">&nbsp; If you don't know the
+              postcode, you can search by key destinations such as hospitals,
+              train stations or landmarks!
+            </li>
+            <li>
+             <img src="social links/checkbox-mark.png" height="16px" width="16px" alt="">&nbsp; You can sort the search
+              results by price, distance or best match (best match is our clever
+              algorithm which finds the optimum space for you).
+            </li>
+          </ul>
+          <h1 style="font-weight: 600 !important;">2. Choose the Right Space</h1>
+          <ul>
+            <li>
+             <img src="social links/checkbox-mark.png" height="16px" width="16px" alt="">&nbsp; Spaces that can be
+              booked right away are displayed with a lightning bolt (in the map)
+              or "Reservable" (in the list).
+            </li>
+            <li>
+            <img src="social links/checkbox-mark.png" height="16px" width="16px" alt="">&nbsp; Click a pin on the map
+              or a card in the list to see reviews, descriptions, photos, rules,
+              amenities, and distance to nearby landmarks.
+            </li>
+          </ul>
+          <h1 style="font-weight: 600 !important;">3. Pay</h1>
+          <ul>
+            <li>
+             <img src="social links/checkbox-mark.png" height="16px" width="16px" alt="">&nbsp; Tell us about the
+              vehicle you will be parking. We will then share this with the
+              space owner so they know who to expect.
+            </li>
+            <li>
+            <img src="social links/checkbox-mark.png" height="16px" width="16px" alt="">&nbsp; Depending on the device
+              you are using (app or website), you can pay for your booking using
+              a credit/debit card, PayPal, Apple Pay or Google Pay(This differs
+              per listing). We securely encrypt all your personal details.
+            </li>
+            <li>
+            <img src="social links/checkbox-mark.png" height="16px" width="16px" alt="">&nbsp; We'll send you a
+              confirmation email containing all the vital information for your
+              booking, including directions and access instructions. Make sure
+              you read the email as it has all the essential information you'll
+              need.
+            </li>
+          </ul>
+          <p>
+            *Please note that a booking can only be related to 1 vehicle. This
+            means that if you wish to make a booking for a second booking, this
+            will have to be a separate booking.
+          </p>
+
+          <h4 style="font-weight: 600 !important;">Related articles</h4>
+          <ul>
+            <li><a href="#"> What should I do before I arrive?</a></li>
+            <li><a href="#">How do I make a long-term booking?</a></li>
+            <li><a href="#"> How do I change the times for my booking?</a></li>
+            <li><a href="#">How do I change my vehicle details?</a></li>
+            <li>
+              <a href="#"
+                >How do I find a space that is suitable for large vehicles?</a
+              >
+            </li>
+          </ul>
+        </section>
+      </section>
+    </section>
+    <br />
+    <hr />
+    <br />
+ <section class="container mainh4_padding text-left">
+            <h1 style="font-weight: 600 !important;">Didn't find what you needed? Try these.</h4>
+            <section class="row">
+              <section class="col my-auto" style="position: relative;">
+                <a href="readourpolocies.html">
+                <h2 style="font-weight: 600 !important;">Read our policies</h2>
+                </a>
+                 <img  style="position:absolute; right: 50px; top: 40px;" src="social links/right-arrow.png" height="16px" width="16px" alt="">
+              </section>
+              <section class="col my-auto" style="position: relative;">
+                <a href="getintouch.html">
+                <h2 style="font-weight: 600 !important;">Get in touch</h2>
+                </a>
+                 <img style="position: absolute; right: 50px; top: 40px;"  src="social links/right-arrow.png" height="16px" width="16px" alt="">
+              </section>
+            </section>
+          </section>
+        </section>
+      </section>
+    </section>
+
+    <section class="inputing_sizing">
+      <!--------------------JOIN OUR MAIL LIST FOR EXCLUSIVE start-->
+      <section class="container-fluid bg_yellow my-5">
+        <section class="row text-center">
+          <section class="col">
+            <section class="container">
+              <section class="row padding_container join_exclusive_container">
+                <section class="col my-auto">
+                  <h2>JOIN OUR MAIL LIST FOR EXCLUSIVE</h2>
+                  <h1>Offers & Crazy Deals</h1>
+                  <form action="" method="POST">
+                    <p>
+                      <input
+                        type="text"
+                        name="fname"
+                        placeholder="Enter Your Name"
+                        id=""
+                      />&nbsp;&nbsp;<input
+                        type="email"
+                        name="email"
+                        placeholder="Enter Your Email"
+                        id=""
+                      />&nbsp;&nbsp;<br /><br />
+                      <button
+                        type="button"
+                        class="btn btn-dark"
+                        style="font-weight: 600 !important"
+                      >
+                        Submit
+                      </button>
+                    </p>
+                  </form>
+                </section>
+              </section>
+            </section>
+          </section>
+        </section>
+      </section>
+
+      <!----------------------lower footer start-->
+      <section class="container-fluid margin_footer_start">
+        <section class="row">
+          <section class="col">
+            <section class="container-fluid text-white">
+              <section class="row medium_footer_form_container">
+                <section
+                  class="
+                    col-xl-6 col-lg-6 col-md-12 col-sm-12
+                    padding_container
+                  "
+                >
+                  <h1>GET IN TOUCH</h1>
+                  <p>
+                    We can ensure reliability, low cost fares and most
+                    important, with safety and comfort in mind.
+                  </p>
+                  <p>
+                    Etiam sit amet convallis erat – class aptent taciti sociosqu
+                    ad litora torquent per conubia! Maecenas gravida lacus.
+                    Lorem etiam sit amet convallis erat.
+                  </p>
+                  <ul class="navigation_footer">
+                    <li>
+                      <a href="https://www.facebook.com/ParkingMudde"
+                        ><img
+                          src="social links/facebook.png"
+                          height="40px"
+                          alt=""
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="https://twitter.com/MuddeParking"
+                        ><img
+                          src="social links/twitter.png"
+                          height="40px"
+                          alt=""
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="https://www.instagram.com/parkingmudde/"
+                        ><img
+                          src="social links/instagram.png"
+                          height="40px"
+                          alt=""
+                      /></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.linkedin.com/in/parking-mudde-438601217/"
+                        ><img
+                          src="social links/linkedin.png"
+                          height="40px"
+                          alt=""
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="hello@parkingmudde.com"
+                        ><img src="social links/email.png" height="40px" alt=""
+                      /></a>
+                    </li>
+                  </ul>
+                </section>
+                <section
+                  class="
+                    col-xl-6 col-lg-6 col-md-12 col-sm-12
+                    text-center
+                    bg_yellow
+                    padding_container
+                    medium_footer_form_container_second
+                  "
+                >
+                  <form action="" method="POST">
+                    <p class="left_text">Email</p>
+                    <p>
+                      <input
+                        type="email"
+                        name="email"
+                        placeholder="Enter Your Email"
+                        id=""
+                      />
+                    </p>
+                    <p class="left_text">Name</p>
+                    <p>
+                      <input
+                        type="text"
+                        name="fname"
+                        placeholder="Enter Your Name"
+                        id=""
+                      />
+                    </p>
+                    <p class="left_text">Message</p>
+                    <p id="textareabold">
+                      <textarea
+                        name="message"
+                        placeholder="Enter Your Message"
+                        id=""
+                        cols="30"
+                        rows="10"
+                      ></textarea>
+                    </p>
+                    <p>
+                      <button
+                        type="button"
+                        class="btn btn-dark"
+                        style="font-weight: 600 !important"
+                      >
+                        Submit
+                      </button>
+                    </p>
+                  </form>
+                </section>
+              </section>
+            </section>
+          </section>
+        </section>
+      </section>
+      <!---------------------footer start-->
+    </section>
+    <!--------------------------->
+    <section class="container-fluid lower_footer">
+      <section class="row">
+        <section class="col">
+          <section class="container">
+            <section class="row lower_footer_height text-center">
+              <section class="col my-auto" style="color: white">
+                Sample text. Click to select the text box. Click again or double
+                click to start editing the text. <br />
+                Website Templates created with Website Builder Software. <br />
+                all rights reserved 2021
+              </section>
+            </section>
+          </section>
+        </section>
+      </section>
+    </section>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
